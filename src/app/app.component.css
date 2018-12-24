@@ -1,14 +1,29 @@
+.active{
+  color: white;
+  background-color: #3498db;
+  border-radius: 15px;
+  padding: 3px 7px;
+}
 .menudiv{
   position: fixed;
   width: 100%;
   text-align: center;
+  
 }
 ul {
-  background-color: beige;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px 0;
+  background-color: white;
   padding-left: 10px;
   display: inline;
 }
 ul li{
     display: inline; 
     margin-right: 10px;
+    margin-left:10px;
+  }
+  a{
+    color: #34495e;
+    text-decoration: none;
   }

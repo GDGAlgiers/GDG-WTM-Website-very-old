@@ -5,7 +5,8 @@ import { MainLandingComponent } from './landingPage/main-landing/main-landing.co
 
 const routes: Routes = [
   { path: 'events', component: MainEventsComponent },
-  { path: '', component: MainLandingComponent }
+  { path: '', component: MainLandingComponent },
+  { path: '*', component: MainLandingComponent }
 ];
 
 @NgModule({
