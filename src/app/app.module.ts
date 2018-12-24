@@ -10,6 +10,8 @@ import { LandingS4Component } from './landingPage/landing-s4/landing-s4.componen
 import { LandingS5Component } from './landingPage/landing-s5/landing-s5.component';
 import { LandingS6Component } from './landingPage/landing-s6/landing-s6.component';
 import { LandingS7Component } from './landingPage/landing-s7/landing-s7.component';
+import { MainLandingComponent } from './landingPage/main-landing/main-landing.component';
+import { MainEventsComponent } from './eventsPage/main-events/main-events.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { LandingS7Component } from './landingPage/landing-s7/landing-s7.componen
     LandingS4Component,
     LandingS5Component,
     LandingS6Component,
-    LandingS7Component
+    LandingS7Component,
+    MainLandingComponent,
+    MainEventsComponent
   ],
   imports: [
     BrowserModule,

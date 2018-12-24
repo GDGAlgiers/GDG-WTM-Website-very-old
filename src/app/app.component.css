@@ -1,0 +1,14 @@
+.menudiv{
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
+ul {
+  background-color: beige;
+  padding-left: 10px;
+  display: inline;
+}
+ul li{
+    display: inline; 
+    margin-right: 10px;
+  }
