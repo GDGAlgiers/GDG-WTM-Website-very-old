@@ -12,6 +12,7 @@ import { LandingS6Component } from './landingPage/landing-s6/landing-s6.componen
 import { LandingS7Component } from './landingPage/landing-s7/landing-s7.component';
 import { MainLandingComponent } from './landingPage/main-landing/main-landing.component';
 import { MainEventsComponent } from './eventsPage/main-events/main-events.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MainEventsComponent } from './eventsPage/main-events/main-events.compon
     LandingS6Component,
     LandingS7Component,
     MainLandingComponent,
-    MainEventsComponent
+    MainEventsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
