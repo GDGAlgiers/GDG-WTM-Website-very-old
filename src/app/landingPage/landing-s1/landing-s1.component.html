@@ -1,5 +1,30 @@
 <section>
-<p>
-  landing-s1 goes here
-</p>
+  <ngx-hm-carousel
+    (ngModelChange)="indexChanged($event)"
+    [autoplay-speed]="5000"
+    [autoplay]="true"
+    [infinite]="infinite"
+    [between-delay]="2000"
+    class="carousel c-accent">
+
+    <section ngx-hm-carousel-container class="content">
+      <article class="item cursor-pointer"
+               ngx-hm-carousel-item
+               *ngFor="let avatar of avatars">
+        <div class="img"
+             [style.backgroundImage]="'url('+avatar.url+')'">
+        </div>
+      </article>
+    </section>
+
+    <ng-template #carouselDot let-model>
+      <div class="ball bg-accent"
+           [class.visible]="model.index === model.currentIndex"></div>
+    </ng-template>
+
+    <ng-template #carouselProgress let-progress>
+      <div class="progress"></div>
+    </ng-template>
+
+  </ngx-hm-carousel>
 </section>

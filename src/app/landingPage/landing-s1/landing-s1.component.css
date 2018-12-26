@@ -1,0 +1,68 @@
+.transition {
+  transition: all .4s ease-in-out;
+}
+
+.carousel .content {
+  display: flex;
+}
+
+.carousel .content .item {
+  width: 100%;
+  display: block;
+}
+
+.carousel .content .item .img {
+  width: 100%;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  height: 0;
+  padding-bottom: 50%;
+}
+
+
+.item {
+  width: 100%;
+  display: block;
+}
+
+.item .img {
+  width: 100%;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  height: 0;
+  padding-bottom: 50%;
+}
+
+.ball {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: black;
+  border: 2px solid;
+  opacity: 0.5;
+}
+.ball.visible {
+   opacity: 1;
+}
+
+
+.progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background: #ff5252;
+}
+
+.click-area {
+  width: 50px;
+  text-align: center;
+}
+
+.click-area i {
+  font-size: 3em;
+}
+
