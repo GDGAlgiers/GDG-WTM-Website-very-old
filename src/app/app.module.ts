@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { NgxHmCarouselModule } from 'ngx-hm-carousel';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingS1Component } from './landingPage/landing-s1/landing-s1.component';
@@ -30,7 +31,8 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxHmCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
