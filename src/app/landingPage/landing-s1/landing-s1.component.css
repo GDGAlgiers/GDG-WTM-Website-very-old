@@ -135,11 +135,17 @@ section{
   z-index: 8;
 }
 .header-titles .title{
-  font-size: 50px;
+  font-size: 4vw;
   font-weight: bold;
   margin: 0;
 }
 .header-titles .sub-title{
-  font-size: 27px;
+  font-size: 2vw;
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .header-titles{
+    bottom: 20%;
+  }
 }
