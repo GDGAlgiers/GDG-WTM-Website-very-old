@@ -11,11 +11,10 @@ export class LandingS1Component implements OnInit {
   direction = 'right';
   directionToggle = true;
   autoplay = true;
-  avatars = '1234567890'.split('').map((x, i) => {
-    const num = i;
-    // const num = Math.floor(Math.random() * 1000);
+  avatars = '123'.split('').map((x, i) => {
+    const num = i + 1;
     return {
-      url: `https://picsum.photos/600/400/?${num}`,
+      url: `../../assets/header_${num}.jpg`,
       title: `${num}`
     };
   });

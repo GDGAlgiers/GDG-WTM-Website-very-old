@@ -1,5 +1,28 @@
+section{
+  position: relative;
+}
+
 .transition {
   transition: all .4s ease-in-out;
+}
+
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .6;
+  z-index: 6;
+}
+
+.gdg_logo{
+  width: 148px;
+  height: 68px;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  color: black;
+  z-index: 9;
 }
 
 .carousel .content {
@@ -42,11 +65,16 @@
   background: black;
   border: 2px solid;
   opacity: 0.5;
+  z-index: 99;
 }
 .ball.visible {
    opacity: 1;
+  z-index: 99;
 }
 
+:host /deep/ .indicators {
+  z-index: 99;
+}
 
 .progress {
   position: absolute;
@@ -55,6 +83,7 @@
   width: 0;
   height: 5px;
   background: #ff5252;
+  z-index: 9;
 }
 
 .click-area {

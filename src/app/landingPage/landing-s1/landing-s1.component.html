@@ -1,4 +1,7 @@
 <section>
+  <img class="gdg_logo" src="../../../assets/gdg-logo.svg" alt="">
+  <div class="overlay"></div>
+
   <ngx-hm-carousel
     (ngModelChange)="indexChanged($event)"
     [autoplay-speed]="5000"
@@ -17,7 +20,7 @@
       </article>
     </section>
 
-    <ng-template #carouselDot let-model>
+    <ng-template class="test" #carouselDot let-model>
       <div class="ball bg-accent"
            [class.visible]="model.index === model.currentIndex"></div>
     </ng-template>
