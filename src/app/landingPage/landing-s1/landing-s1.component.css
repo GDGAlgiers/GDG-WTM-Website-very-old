@@ -16,17 +16,45 @@ section{
 }
 
 .gdg_logo{
-  width: 148px;
-  height: 68px;
+  width: 160px;
+  height: 0px;
   position: absolute;
-  top: 0px;
-  left: 30px;
+  top: 25px;
+  left: 35px;
   z-index: 9;
 }
-.gdg_logo img{
-  width: 30%;
-  height: 100%;
+.gdg_logo>img{
+  width: 50px;
+  height: 70px;
+  float: left;
 }
+.gdg_logo p{
+  color: #fff;
+  font-size: 27px;
+  font-weight: bold;
+  margin-top: 18px;
+  width: 43%;
+  float: left;
+}
+.algiers_logo{
+  width: 25%;
+  float: left;
+  display: inline-block;
+  height: 70px;
+}
+.algiers_logo>img{
+  width: 100%;
+  height: 70%;
+  margin-left: 7px;
+}
+.algiers_logo>span{
+  color: white;
+  font-size: 12px;
+  margin-left: 5px;
+  margin-top: -3px;
+  display: inherit;
+}
+
 .carousel .content {
   display: flex;
 }
