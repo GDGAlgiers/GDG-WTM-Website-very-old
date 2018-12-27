@@ -1,0 +1,106 @@
+
+.section {
+    background-color: whitesmoke;
+    background-image: url('/assets/Blue effect.svg'), url("/assets/Red effect.svg"),
+      url("/assets/about-us.svg");
+    background-size: 20%, 20%, 45%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 92% 20%, 6% 75%, 7.5% -90%;
+  
+    text-align: center;
+    padding: 10% 10% 12% 10%;
+  }
+  
+  #aboutDiv {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 3% 10% 5% 10%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    font-family: ProductSans;
+      text-align: center;
+    color: #434344;
+  }
+  .whatisDiv {
+    text-align: center;
+  }
+  .about {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .What-is- {
+    font-family: ProductSans;
+    font-size: 25px;
+    text-align: left;
+    color: #686868;
+    display: inline;
+  }
+  .GDG {
+    font-family: ProductSans;
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: left;
+    color: #434344;
+    display: inline;
+    margin-left: -10px;
+  }
+  .gdgLogo {
+    position: relative;
+    width: 45px;
+    top: 24px;
+    left: -10px;
+  }
+  .algiersDiv {
+    display: inline-block;
+    width: 30px;
+    line-height: 0.5;
+    position: relative;
+    top: 10px;
+  }
+  .algiersDiv img {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+  }
+  .algiersDiv p {
+    font-family: ProductSans;
+    display: inline-block;
+    font-size: 10px;
+    color: #434344;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  @media only screen and (max-width: 1050px) {
+    .section {
+      background-size: 30%, 30%, 45%;
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: 93% 8%, 5% 87%, 7.5% -20%;
+  
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 680px) {
+    .section {
+      background-size: 50%, 43%, 45%;
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: 96% 0%, 0% 96%, 7.5% -5%;
+  
+      text-align: center;
+      padding: 4% 4% 6% 4%;
+    }
+    
+  }
+  @media only screen and (max-width: 480px) {
+    .section {
+      background-size: 50%, 43%, 60%;
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: 101% 0%, 0% 100%, 3% -7%;
+  
+      text-align: center;
+      padding: 9% 4% 8% 4%;
+    }
+    
+  }
