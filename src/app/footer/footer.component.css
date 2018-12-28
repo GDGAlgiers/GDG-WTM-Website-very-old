@@ -51,3 +51,14 @@
   .footer .footer-social{
       width: 25vw;
   }
+
+  .footer .footer-social a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;;
+    background-size: 50px;
+    margin: 1em;
+  }
+  .footer .footer-social .facebook{background-image: url("/assets/facebook.svg");}
+  .footer .footer-social .twitter{background-image: url("/assets/twitter.svg");}
+  .footer .footer-social .instagram{background-image: url("/assets/instagram.svg");}
