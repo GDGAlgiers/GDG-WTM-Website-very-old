@@ -15,6 +15,7 @@ import { MainLandingComponent } from './landingPage/main-landing/main-landing.co
 import { MainEventsComponent } from './eventsPage/main-events/main-events.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { AgmCoreModule } from '@agm/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,10 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxHmCarouselModule
+    NgxHmCarouselModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'YOUR_KEY'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
