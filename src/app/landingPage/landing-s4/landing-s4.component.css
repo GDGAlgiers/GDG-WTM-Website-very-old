@@ -20,7 +20,7 @@
 }
 
 .testimonials .right-effect{
-  border-radius: 81px 0 0 0;
+  border-radius: 81px;
   background-color: #0be881;
   width: 227px;
   height: 152px;
@@ -35,9 +35,9 @@
 }
 .testimonials-content>img{
   position: absolute;
-  left: 22px;
-  width: 33%;
-  top: -24px;
+  left: 2%;
+  width: 600px;
+  z-index: -1;
 }
 .testimonials-content h3{
   color: #999;
@@ -54,7 +54,7 @@
   border-radius: 10px;
   margin-top: 18px;
   left: 5%;
-  top: 32%;
+  top: 160px;
 }
 
 .testimonials-articles article{
@@ -75,6 +75,7 @@
   float: right;
   width: 45%;
   margin-top: 20px;
+  font-family: ProductSans;
 }
 
 .testimonials-articles article>div p:first-of-type{
@@ -113,6 +114,16 @@
 
 
 @media (max-width: 768px) {
+  .testimonials{
+    height: 1000px;
+  }
+  .testimonials-content h3{
+    font-size: 10vw;
+    z-index: 10;
+  }
+  .testimonials-content>img{
+    width: 450px;
+  }
   .testimonials-articles{
     text-align: center;
     z-index: 10;
@@ -129,4 +140,11 @@
     margin: 0 auto;
     float: none;
   }
+}
+
+@media (max-width: 455px) {
+  .testimonials{
+    height: 1100px;
+  }
+
 }

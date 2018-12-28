@@ -35,6 +35,7 @@ section{
   margin-top: 18px;
   width: 43%;
   float: left;
+  font-family: ProductSans;
 }
 .algiers_logo{
   width: 25%;
@@ -133,6 +134,7 @@ section{
   left: 30px;
   color: #fff;
   z-index: 8;
+  font-family: ProductSans;
 }
 .header-titles .title{
   font-size: 4vw;
