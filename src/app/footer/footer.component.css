@@ -58,7 +58,9 @@
     height: 50px;;
     background-size: 50px;
     margin: 1em;
+    transition: all 0.3s;
   }
+  .footer .footer-social a:hover{transform: rotate(20deg);}
   .footer .footer-social .facebook{background-image: url("/assets/facebook.svg");}
   .footer .footer-social .twitter{background-image: url("/assets/twitter.svg");}
   .footer .footer-social .instagram{background-image: url("/assets/instagram.svg");}
