@@ -1,0 +1,53 @@
+.section {
+    position: static;
+    background-color: whitesmoke;
+    background-image: url("/assets/handshake (2).svg");
+    background-blend-mode: overlay;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position:  90% 75%;
+    min-height: 100vh;
+    min-width: 100vh;
+    padding: 25px;
+
+}
+  
+#ourPartners{
+    position: absolute;
+    text-align: left;
+    font-size: 5rem;
+    font-family: sans-serif;
+    opacity: 0.2;
+}
+
+.partnerLogo{
+    position: relative;
+    top: 30vh;
+    left: 25vw;
+    width: 50%;
+    height: 50%;
+}
+
+.footer{
+    position: relative; 
+    margin-left: 27rem;
+    margin-top: 15rem;
+    bottom: 0;
+}
+
+.GreenButton {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+    text-shadow:0px 1px 0px #2f6627;
+    margin: 1rem;
+}
+.GreenButton:hover {
+	background-color:#5cbf2a;
+}
