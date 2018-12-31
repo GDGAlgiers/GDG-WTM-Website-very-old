@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body{
   margin: 0;
-  background:whitesmoke
+  background:whitesmoke;
+  overflow-x: hidden;
+  -ms-overflow-x: hidden;
 }
