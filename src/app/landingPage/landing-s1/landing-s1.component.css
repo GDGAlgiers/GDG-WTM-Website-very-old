@@ -24,9 +24,7 @@ section{
   z-index: 9;
 }
 .gdg_logo>img{
-  width: 50px;
-  height: 70px;
-  float: left;
+  width: 100%;
 }
 .gdg_logo p{
   color: #fff;
@@ -146,8 +144,16 @@ section{
   margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .header-titles{
-    bottom: 20%;
+    bottom: 45px;
   }
+  .gdg_logo{
+    left: 50%;
+  }
+  .gdg_logo>img{
+    position: relative;
+    left: -50%;
+  }
+
 }
