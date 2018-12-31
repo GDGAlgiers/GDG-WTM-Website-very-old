@@ -9,6 +9,7 @@
     text-align: center;
     overflow: hidden;
     box-sizing: border-box;
+    font-family: ProductSans;
 }
 .footer::before { 
     content: " ";
