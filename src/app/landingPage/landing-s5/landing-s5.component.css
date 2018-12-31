@@ -1,8 +1,6 @@
 .section {
     position: static;
-    background-color: whitesmoke;
     background-image: url("/assets/handshake (2).svg");
-    background-blend-mode: overlay;
     background-size: 40%;
     background-repeat: no-repeat;
     background-position:  100% 25%;

@@ -1,5 +1,44 @@
 <section>
-<p>
-  landing-s1 goes here
-</p>
+  <!-- logo -->
+  <div class="overlay"></div>
+  <div class="gdg_logo">
+    <img src="../../../assets/gdgLogo.png" alt="gdg">
+    <p>GDG</p>
+    <div class="algiers_logo">
+      <img src="../../../assets/algiers.png" alt="algiers">
+      <span>Algiers</span>
+    </div>
+  </div>
+  <div class="header-titles">
+    <p class="title">We do cool things that matter!</p>
+    <p class="sub-title">More than 1500 participants</p>
+  </div>
+  <ngx-hm-carousel
+    (ngModelChange)="indexChanged($event)"
+    [autoplay-speed]="5000"
+    [autoplay]="true"
+    [infinite]="infinite"
+    [between-delay]="2000"
+    class="carousel c-accent">
+
+    <section ngx-hm-carousel-container class="content">
+      <article class="item cursor-pointer"
+               ngx-hm-carousel-item
+               *ngFor="let avatar of avatars">
+        <div class="img"
+             [style.backgroundImage]="'url('+avatar.url+')'">
+        </div>
+      </article>
+    </section>
+
+    <ng-template class="test" #carouselDot let-model>
+      <div class="ball bg-accent"
+           [class.visible]="model.index === model.currentIndex"></div>
+    </ng-template>
+
+    <ng-template #carouselProgress let-progress>
+      <div class="progress"></div>
+    </ng-template>
+
+  </ngx-hm-carousel>
 </section>

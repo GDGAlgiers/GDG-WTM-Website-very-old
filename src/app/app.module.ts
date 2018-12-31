@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { NgxHmCarouselModule } from 'ngx-hm-carousel';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingS1Component } from './landingPage/landing-s1/landing-s1.component';
@@ -14,6 +15,7 @@ import { MainLandingComponent } from './landingPage/main-landing/main-landing.co
 import { MainEventsComponent } from './eventsPage/main-events/main-events.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { AgmCoreModule } from '@agm/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,11 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxHmCarouselModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'YOUR_KEY'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,21 @@
 <section>
-  <p>
-    landing-s6 goes here
-  </p>
+  <div class="mapContainer">
+    <p class="title">Our Location</p>
+  <agm-map [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
+  <div class="mapCard">
+    <img src="/assets/header_3.jpg">
+    <div class="esiAdress">
+        <img src="/assets/marker.svg"/>
+        <p>Ecole Nationale Supérieure d&apos;Informatique (ESI 
+            ex.INI), Alger Oued Smar,، 16309، Oued Smar 
+            16309</p>
+        <div class="clearfix"></div>
+        <div class="circle">
+          <img src="/assets/turn-right-sign.svg"/>
+        </div>
+    </div>
+  </div>
+</div>
   </section>

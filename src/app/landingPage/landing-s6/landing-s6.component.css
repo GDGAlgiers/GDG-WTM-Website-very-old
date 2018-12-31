@@ -1,0 +1,111 @@
+agm-map {
+  height: 70%;
+}
+
+.mapContainer {
+  background-image: url("/assets/location.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 0% left 0%;
+  position: relative;
+
+  height: 600px;
+}
+.title{
+  opacity: 0.35;
+  font-family: ProductSans;
+  font-size: 80px;
+  margin-bottom: 0;
+  text-align: right;
+  padding-right: 30px;
+  color: #434344;
+}
+.mapCard {
+  width: 300px;
+  height: 350px;
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  bottom: 5%;
+  left: 60px;
+  overflow: hidden;
+}
+.mapCard img {
+  width: 100%;
+  height: 53%;
+
+}
+.esiAdress {
+  width: 100%;
+}
+.esiAdress img {
+  float: left;
+  height: auto;
+  width: 15%;
+  margin:10px;
+}
+.esiAdress p {
+  font-family: ProductSans;
+  width: 85%;
+  font-size: 16px;
+  color: #7b8591;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+.circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 12px;
+    padding: 3%;
+  }
+  .circle img {
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-top: auto;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  @media only screen and (max-width: 500px) {
+    agm-map {
+      visibility: hidden;
+      height: 90px;
+      display: none;
+    }
+    .mapContainer{
+      height: 320px;
+      background-position: bottom 0 left -120px;
+    }
+  
+    .title{
+      font-size: 30px;
+      padding: 0;
+            margin-right: 20px;
+    }
+   
+    .mapCard{
+      bottom: 0;
+      right: 20px;
+      left: unset;
+      width: 230px;
+      height: 270px;
+    }
+
+    .esiAdress p {
+      font-size: 12px;
+    }
+    .circle {
+      margin-top: 3px;
+    }
+  }
