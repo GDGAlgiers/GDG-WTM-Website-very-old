@@ -24,10 +24,12 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/customFonts.css"
+              "src/customFonts.css",
+              "src/assets/styles/textStyle.css"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/scripts/textScript.js"
             ]
           },
           "configurations": {

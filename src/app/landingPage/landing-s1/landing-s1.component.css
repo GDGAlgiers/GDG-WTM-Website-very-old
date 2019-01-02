@@ -170,13 +170,7 @@ section{
     padding: 10px;
     border-radius: 10px;
     font-size: 10vw;
-  }
-  .header-titles .title span{
-    -webkit-background-image: url("../../../assets/header_1.jpg");
-    background-image: url("../../../assets/header_1.jpg");
-    color:transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+    color: #000;
   }
   .header-titles .sub-title{
     order: 1;
