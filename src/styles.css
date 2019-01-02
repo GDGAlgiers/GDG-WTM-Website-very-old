@@ -1,7 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 body{
   margin: 0;
-  background:whitesmoke;
+  background:#f9f9f9;
   overflow-x: hidden;
   -ms-overflow-x: hidden;
+}
+body,html{
+    margin: 0;
+    padding: 0;
 }
