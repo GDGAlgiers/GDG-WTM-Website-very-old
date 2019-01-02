@@ -145,6 +145,16 @@ section{
 }
 
 @media (max-width: 769px) {
+  .header{
+    height: 600px;
+  }
+  .header section.content{
+    height: 100%;
+  }
+  .header section.content .img{
+    height: 100% !important;
+  }
+
   .header-titles{
     bottom: 45px;
   }
