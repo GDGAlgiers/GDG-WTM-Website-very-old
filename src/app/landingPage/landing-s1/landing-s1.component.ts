@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-landing-s1',
@@ -21,6 +22,9 @@ export class LandingS1Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $('.gdg_logo').click(function () {
+      console.log("click")
+    });
   }
 
   indexChanged(index) {
