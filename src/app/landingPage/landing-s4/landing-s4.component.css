@@ -1,8 +1,14 @@
 .testimonials{
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 600px;
   margin-bottom: 50px;
+  overflow-x: hidden;
+
+  background-image: url('../../../assets/quotation_g.svg');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: 5% 25%;
 }
 
 .testimonials .effect{
@@ -79,7 +85,7 @@
 }
 .testimonials-articles article .image{
   width: 42%;
-  margin: 20px;
+  margin: 20px 0 20px 20px;
   border-radius: 10px;
   float: left;
   height: 180px;
@@ -138,6 +144,10 @@
 @media (max-width: 769px) {
   .testimonials{
     height: 800px;
+    background-image: url('../../../assets/quotation_g.svg');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: 0% 5%;
   }
   .testimonials .last-effect{
     display: block;
@@ -159,7 +169,7 @@
     background: none;
   }
   .testimonials-articles article{
-    width: 80%;
+    width: 90%;
     background: #fff;
     margin-bottom: 10px;
     border-radius: 15px;
@@ -172,6 +182,13 @@
 @media (max-width: 455px) {
   .testimonials{
     height: 750px;
+    background-image: url('../../../assets/quotation_g.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 20%;
+  }
+  .testimonials-content h3{
+    margin: 0;
   }
   .testimonials .last-effect{
     display: block;
@@ -191,4 +208,25 @@
     top: 29%;
   }
 
+}
+
+@media (max-width: 290px) {
+  .testimonials{
+    height: 850px;
+  }
+  .testimonials-articles{
+    top: 100px;
+  }
+  .testimonials-articles article .image{
+    width: 90%;
+  }
+  .testimonials-articles article>div:last-of-type{
+    width: 90%;
+  }
+}
+
+@media (min-width: 1600px){
+  .testimonials{
+    height: 700px;
+  }
 }
