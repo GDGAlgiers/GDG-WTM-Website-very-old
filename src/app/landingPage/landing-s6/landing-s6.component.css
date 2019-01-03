@@ -54,8 +54,8 @@ agm-map {
   padding: 0;
 }
 .circle {
-    width: 40px ;
-    height: 40px ;
+    width: 25px ;
+    height: 25px ;
     border-radius: 50%;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
