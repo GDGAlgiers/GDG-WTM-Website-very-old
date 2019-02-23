@@ -1,5 +1,6 @@
-agm-map {
+iframe {
   height: 70%;
+  width: 100%;
 }
 
 .mapContainer {
@@ -87,13 +88,13 @@ agm-map {
       height: 320px;
       background-position: bottom 0 left -120px;
     }
-  
+
     .title{
       font-size: 30px;
       padding: 0;
             margin-right: 20px;
     }
-   
+
     .mapCard{
       bottom: 0;
       right: 20px;
