@@ -48,15 +48,15 @@ iframe {
 .esiAdress p {
   font-family: ProductSans;
   width: 85%;
-  font-size: 16px;
+  font-size: 14px;
   color: #7b8591;
   margin: 0;
   margin-top: 10px;
   padding: 0;
 }
 .circle {
-    width: 25px ;
-    height: 25px ;
+    width: 35px ;
+    height: 35px ;
     border-radius: 50%;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff;

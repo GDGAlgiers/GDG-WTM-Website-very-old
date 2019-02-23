@@ -35,7 +35,7 @@ import { AgmCoreModule } from '@agm/core';
     AppRoutingModule,
     NgxHmCarouselModule,
     AgmCoreModule.forRoot({
-      apiKey: 'YOUR_KEY'
+      apiKey: ''
     })
   ],
   providers: [],
