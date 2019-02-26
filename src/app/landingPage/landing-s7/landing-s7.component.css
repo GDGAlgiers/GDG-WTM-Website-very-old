@@ -40,6 +40,12 @@
 .GreenButton:hover {
 	background-color:#5cbf2a;
 }
+#mySVG{ 
+    display: none;
+    width: 80px;
+    height: 80px;  
+    margin-top: 0px;  
+}
 
 /* basic responsiveness for smaller screens */
 @media only screen and (max-width: 800px) {
@@ -55,11 +61,17 @@
           font-size: 9vw;
       }
       #contactUsButton{
-          margin-top: 0px;
+          /*margin-top: 0px;
           margin-left: 10vw; 
           padding:16px 20px;
-      }
+          font-size: 0%; */
+          display: none;
 
+      }
+      #mySVG{
+        margin-left: 10vw; 
+        display: inline;
+      }
 }
 
 /* basic responsiveness for x-smaller screens */
@@ -67,7 +79,7 @@
     .section {
         height: 30vh;
         background-position: bottom -15px left 110%;
-        background-size: 50vw 200px;
+        background-size: 50vw 180px;
   
         padding-top: 3rem;
         padding-left: 3vw; 
@@ -77,9 +89,21 @@
           font-size: 9vw; 
       }
       #contactUsButton{
-          margin-top: 0px;
+          /*margin-top: 0px;
           margin-left: 8vw;
-          padding:16px 20px;
+          padding:0px 0px;
+          font-size: 0%; */
+          display: none;
+
+      }
+
+      #mySVG{
+        width: 50px;
+        height: 50px;
+        margin-left: 8vw; 
+          margin-left: 8vw;
+        margin-left: 8vw; 
+        display: inline;
       }
 
 }
