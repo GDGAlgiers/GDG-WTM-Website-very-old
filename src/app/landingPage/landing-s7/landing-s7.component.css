@@ -2,19 +2,18 @@
     position: static;
     background-image: url("/assets/continuous-line-envelope-opacity-ised.svg");
     background-repeat: no-repeat;
-    background-position: bottom -80% left 90%;
-    background-size: 35%;
-    height: 80vh;
+    background-position: bottom -2rem left 90%;
+    background-size: 35vw 90%; 
+    
+    padding-top: 3rem; 
+    padding-left: 5vw; /*To center the label and the button */
 
-    padding-top: 5rem;
-    padding-left: 4rem; /* to "center" the label and button */
-
-  
+    height: 60vh;   
 }
   
 .section label{
     display: block;
-    font-size: 96px; /* to-do: make it responsive to zooming-out */
+    font-size: 7vw;
     font-family: ProductSans;
     color: #434344;
     opacity: 0.35;   
@@ -22,8 +21,8 @@
 }
 
 #contactUsButton{
-    margin-top: 110px;
-    margin-left: 3rem;
+    margin-top: 5rem;
+    margin-left: 3vw; /*to be centered relatively to the label */
 	padding:16px 100px;
 }
 
@@ -34,7 +33,7 @@
 	cursor:pointer;
 	color:#ffffff;
 	font-family: ProductSans;
-	font-size: 28px; /* to-do: make it responsive to zooming-out */
+    font-size: 2vw;
     text-shadow:0px 1px 0px #2f6627;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 }
@@ -43,31 +42,44 @@
 }
 
 /* basic responsiveness for smaller screens */
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 800px) {
     .section {
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      background-position: 0% 100%;
+        height: 40vh;
+        background-position: bottom -20px left 130%;
+        background-size: 55vw 270px;
   
-      text-align: center !important;
-    } 
-    .section label{
-        font-size: 50px;
-    }
+        padding-top: 3.5rem;
+        padding-left: 5vw;
+      } 
+      .section label{
+          font-size: 9vw;
+      }
+      #contactUsButton{
+          margin-top: 0px;
+          margin-left: 10vw; 
+          padding:16px 20px;
+      }
 
 }
 
 /* basic responsiveness for x-smaller screens */
 @media only screen and (max-width: 480px) {
     .section {
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      background-position: 0% 100%;
+        height: 30vh;
+        background-position: bottom -15px left 110%;
+        background-size: 50vw 200px;
   
-      text-align: center !important;
-    } 
-    .section label{
-        font-size: 30px;
-    }
+        padding-top: 3rem;
+        padding-left: 3vw; 
+
+      } 
+      .section label{
+          font-size: 9vw; 
+      }
+      #contactUsButton{
+          margin-top: 0px;
+          margin-left: 8vw;
+          padding:16px 20px;
+      }
 
 }
