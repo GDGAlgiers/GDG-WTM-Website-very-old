@@ -16,6 +16,7 @@ import { MainEventsComponent } from './eventsPage/main-events/main-events.compon
 import { FooterComponent } from './footer/footer.component';
 
 import { AgmCoreModule } from '@agm/core';
+import { NotfoundComponent } from './notfound/notfound.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { AgmCoreModule } from '@agm/core';
     LandingS7Component,
     MainLandingComponent,
     MainEventsComponent,
-    FooterComponent
+    FooterComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,

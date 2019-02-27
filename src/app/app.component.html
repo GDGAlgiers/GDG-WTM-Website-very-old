@@ -6,9 +6,11 @@
     true}">Events</a></li>
   <li><a [routerLink]="['/projects']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
     true}" >Projects</a></li>
-  <li><a [routerLink]="['/gdglife']" >GDG Life</a></li>
-  <li><a [routerLink]="['/team']"  >Team</a></li>
+  <li><a [routerLink]="['/gdglife']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+    true}" >GDG Life</a></li>
+  <li><a [routerLink]="['/team']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+    true}"  >Team</a></li>
 </ul>
 </div>
 <router-outlet></router-outlet>
-<app-footer></app-footer>
+<app-footer *ngIf="showFooter"></app-footer>

@@ -8,7 +8,7 @@
     padding-top: 3rem; 
     padding-left: 5vw; /*To center the label and the button */
 
-    height: 60vh;   
+    height: 360px;   
 }
   
 .section label{
@@ -40,7 +40,7 @@
 .GreenButton:hover {
 	background-color:#5cbf2a;
 }
-#mySVG{ 
+#mailSVG{ 
     display: none;
     width: 80px;
     height: 80px;  
@@ -50,7 +50,7 @@
 /* basic responsiveness for smaller screens */
 @media only screen and (max-width: 800px) {
     .section {
-        height: 40vh;
+        height: 250px;
         background-position: bottom -20px left 130%;
         background-size: 55vw 270px;
   
@@ -68,7 +68,7 @@
           display: none;
 
       }
-      #mySVG{
+      #mailSVG{
         margin-left: 10vw; 
         display: inline;
       }
@@ -77,7 +77,7 @@
 /* basic responsiveness for x-smaller screens */
 @media only screen and (max-width: 480px) {
     .section {
-        height: 30vh;
+        height: 180px;
         background-position: bottom -15px left 110%;
         background-size: 50vw 180px;
   
@@ -97,7 +97,7 @@
 
       }
 
-      #mySVG{
+      #mailSVG{
         width: 50px;
         height: 50px;
         margin-left: 8vw; 
