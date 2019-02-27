@@ -1,0 +1,109 @@
+.section {
+    position: static;
+    background-image: url("/assets/continuous-line-envelope-opacity-ised.svg");
+    background-repeat: no-repeat;
+    background-position: bottom -2rem left 90%;
+    background-size: 35vw 90%; 
+    
+    padding-top: 3rem; 
+    padding-left: 5vw; /*To center the label and the button */
+
+    height: 60vh;   
+}
+  
+.section label{
+    display: block;
+    font-size: 7vw;
+    font-family: ProductSans;
+    color: #434344;
+    opacity: 0.35;   
+
+}
+
+#contactUsButton{
+    margin-top: 5rem;
+    margin-left: 3vw; /*to be centered relatively to the label */
+	padding:16px 100px;
+}
+
+.GreenButton {
+	background-color:#44c767;
+	border-radius:40px;
+	border:1px solid #18ab29;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: ProductSans;
+    font-size: 2vw;
+    text-shadow:0px 1px 0px #2f6627;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.GreenButton:hover {
+	background-color:#5cbf2a;
+}
+#mySVG{ 
+    display: none;
+    width: 80px;
+    height: 80px;  
+    margin-top: 0px;  
+}
+
+/* basic responsiveness for smaller screens */
+@media only screen and (max-width: 800px) {
+    .section {
+        height: 40vh;
+        background-position: bottom -20px left 130%;
+        background-size: 55vw 270px;
+  
+        padding-top: 3.5rem;
+        padding-left: 5vw;
+      } 
+      .section label{
+          font-size: 9vw;
+      }
+      #contactUsButton{
+          /*margin-top: 0px;
+          margin-left: 10vw; 
+          padding:16px 20px;
+          font-size: 0%; */
+          display: none;
+
+      }
+      #mySVG{
+        margin-left: 10vw; 
+        display: inline;
+      }
+}
+
+/* basic responsiveness for x-smaller screens */
+@media only screen and (max-width: 480px) {
+    .section {
+        height: 30vh;
+        background-position: bottom -15px left 110%;
+        background-size: 50vw 180px;
+  
+        padding-top: 3rem;
+        padding-left: 3vw; 
+
+      } 
+      .section label{
+          font-size: 9vw; 
+      }
+      #contactUsButton{
+          /*margin-top: 0px;
+          margin-left: 8vw;
+          padding:0px 0px;
+          font-size: 0%; */
+          display: none;
+
+      }
+
+      #mySVG{
+        width: 50px;
+        height: 50px;
+        margin-left: 8vw; 
+          margin-left: 8vw;
+        margin-left: 8vw; 
+        display: inline;
+      }
+
+}
