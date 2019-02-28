@@ -12,5 +12,19 @@
     true}"  >Team</a></li>
 </ul>
 </div>
+
+<div class="menumobile">
+  <ul>
+    <li><a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+      true}" > <span>   Home </span> <img src="/assets/home.svg" alt="Home icon"></a>  </li>
+    <li><a [routerLink]="['/events']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+      true}"><span>Events </span><img src="/assets/home.svg" alt="Events icon"></a>  </li>
+    <li><a [routerLink]="['/projects']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+      true}" > <span>Projects </span><img src="/assets/home.svg" alt="Projects icon"> </a> </li>
+    <li><a [routerLink]="['/gdglife']" > <span>GDG Life </span> <img src="/assets/home.svg" alt="Life icon"> </a>  </li>
+    <li><a [routerLink]="['/team']"  > <span>Team </span> <img src="/assets/home.svg" alt="Team icon"> </a>  </li>
+  </ul>
+  </div>
+
 <router-outlet></router-outlet>
 <app-footer *ngIf="showFooter"></app-footer>

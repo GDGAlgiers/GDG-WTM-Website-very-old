@@ -11,14 +11,14 @@
   z-index: 9;
   padding-top: 10px;
 }
-ul {
+.menudiv ul {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 15px 5px;
   background-color: white;
   display: inline;
 }
-ul li{
+.menudiv ul li{
     display: inline;
     margin-right: 10px;
     margin-left:10px;
@@ -27,3 +27,34 @@ ul li{
     color: #34495e;
     text-decoration: none;
   }
+
+  /* Mobile menu 1st try by 5nai3r :3 */
+
+  .menumobile{
+    position: fixed;
+    width: 60px;
+    height: 300px;
+    text-align: center;
+    z-index: 999;
+    top: 50px;
+    right:10px;
+    border-radius: 50px;
+    background-color: #fff;
+    display: none;
+  }
+  .menumobile ul {
+    list-style-type: none;
+    margin: 25px 0 0 0;
+    padding: 0;
+  }
+  .menumobile span{display: block;}
+  .menumobile img{margin: 0 0 3px 0;}
+  .menumobile .active {
+    border-radius: 0;
+    padding: 0;
+    background-color: transparent;
+    color: #3498db;
+  }
+  @media only screen and (max-width : 768px) {.menumobile{display: block;}
+  .menudiv{display: none;}
+}
