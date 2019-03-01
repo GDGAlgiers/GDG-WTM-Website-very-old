@@ -13,7 +13,7 @@
     display: block;
     font-size: 80px;
 	font-family: ProductSans;
-    opacity: 0.35;
+    opacity: 0.25;
     margin-top: -25px; /* remove the padding inherited from .section */
     margin-bottom: 25px;
     margin-left: 3rem;
@@ -83,8 +83,11 @@
     } 
     .section label{
         font-size: 50px;
+        margin-left: 0;
     }
-
+    #PartnersDiv{
+        margin-left: 0;
+    }
     .partnerDiv{
         box-sizing: border-box;
         max-height: 100%;
@@ -109,6 +112,7 @@
     } 
     .section label{
         font-size: 30px;
+        margin-left: 0;
     }
     .partnerDiv{
         box-sizing: border-box;

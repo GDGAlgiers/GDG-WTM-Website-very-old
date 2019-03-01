@@ -1,12 +1,13 @@
 .testimonials{
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 500px;
+  margin-top: 100px;
   margin-bottom: 50px;
   overflow-x: hidden;
 
   background-image: url('../../../assets/quotation_g.svg');
-  background-size: 40%;
+  background-size: 35%;
   background-repeat: no-repeat;
   background-position: 5% 25%;
 }
@@ -23,7 +24,7 @@
   height: 132px;
   transform: rotate(-56deg);
   left: -160px;
-  top: 25%;
+  top: 34%;
 }
 
 .testimonials .right-effect{
@@ -33,7 +34,7 @@
   height: 132px;
   transform: rotate(-56deg);
   right: -160px;
-  bottom: 25%;
+  bottom: 18%;
 }
 
 .testimonials .last-effect{

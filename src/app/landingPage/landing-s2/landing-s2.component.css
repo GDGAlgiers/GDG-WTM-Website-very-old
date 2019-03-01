@@ -1,6 +1,5 @@
 
 .section {
-    background-color: whitesmoke;
     background-image: url('/assets/Blue effect.svg'), url("/assets/Red effect.svg"),
       url("/assets/about-us.svg");
     background-size: 20%, 20%, 45%;
