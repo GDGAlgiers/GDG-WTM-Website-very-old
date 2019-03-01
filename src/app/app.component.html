@@ -12,17 +12,20 @@
     true}"  >Team</a></li>
 </ul>
 </div>
-
-<div class="menumobile">
+<img (click)="closeMenu()" id="openBtn" class="hide" src="/assets/options.svg">
+<div id="menumobile" class="menumobile">
   <ul>
+      <li id="closeBtn" > <img src="/assets/close-button.svg" (click)="closeMenu()" alt="close icon"> </li>
     <li><a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-      true}" > <span>   Home </span> <img src="/assets/home.svg" alt="Home icon"></a>  </li>
+      true}" > <span>   Home </span> <img src="/assets/AI_home.svg" alt="Home icon"></a>  </li>
     <li><a [routerLink]="['/events']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-      true}"><span>Events </span><img src="/assets/home.svg" alt="Events icon"></a>  </li>
+      true}"><span>Events </span><img src="/assets/calendar-daily-page-on-day-31.svg" alt="Events icon"></a>  </li>
     <li><a [routerLink]="['/projects']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-      true}" > <span>Projects </span><img src="/assets/home.svg" alt="Projects icon"> </a> </li>
-    <li><a [routerLink]="['/gdglife']" > <span>GDG Life </span> <img src="/assets/home.svg" alt="Life icon"> </a>  </li>
-    <li><a [routerLink]="['/team']"  > <span>Team </span> <img src="/assets/home.svg" alt="Team icon"> </a>  </li>
+      true}" > <span>Projects </span><img src="/assets/terminal.svg" alt="Projects icon"> </a> </li>
+    <li><a [routerLink]="['/gdglife']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+      true}" > <span>GDG Life </span> <img src="/assets/laughing.svg" alt="Life icon"> </a>  </li>
+    <li><a [routerLink]="['/team']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+      true}"  > <span>Team </span> <img src="/assets/AI_user.svg" alt="Team icon"> </a>  </li>
   </ul>
   </div>
 

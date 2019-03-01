@@ -28,12 +28,10 @@
     text-decoration: none;
   }
 
-  /* Mobile menu 1st try by 5nai3r :3 */
-
   .menumobile{
     position: fixed;
-    width: 60px;
-    height: 300px;
+    width: 50px;
+    min-height: 200px;
     text-align: center;
     z-index: 999;
     top: 50px;
@@ -41,6 +39,7 @@
     border-radius: 50px;
     background-color: #fff;
     display: none;
+    transition-duration: 1s;
   }
   .menumobile ul {
     list-style-type: none;
@@ -55,6 +54,50 @@
     background-color: transparent;
     color: #3498db;
   }
-  @media only screen and (max-width : 768px) {.menumobile{display: block;}
+  @media only screen and (max-width : 768px) {.menumobile{display: block; }
   .menudiv{display: none;}
+}
+#openBtn{
+  position: absolute ;
+  width: 35px;
+  z-index: 1000;
+  right: 30px;
+  top: 35px;
+  transition-duration: 1s;
+}
+#openBtn.hide{
+  position: absolute ;
+  width: 20px;
+  z-index: 1000;
+  right: 30px;
+  top: -40px;
+}
+#menumobile.hide{
+  right:-140px;
+  min-height: 0;
+  opacity: 0;
+}
+.menumobile li{
+  margin-bottom: 20px;
+}
+a>span{
+  min-width:70px;
+ left: -80px;
+ position: absolute;
+ color: whitesmoke;
+ text-align: right;
+}
+a.active>span{
+  color:#3498db
+}
+li img{
+  position: relative;
+  top: -10px;
+  width: 15px;
+}
+a>img{
+  width: 25px;
+}
+a.active>img{
+filter:invert(.5) sepia(1) saturate(5) hue-rotate(175deg);
 }
