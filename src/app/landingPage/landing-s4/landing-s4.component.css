@@ -10,6 +10,8 @@
   background-size: 35%;
   background-repeat: no-repeat;
   background-position: 5% 25%;
+  scrollbar-width: none;
+
 }
 
 .testimonials .effect{
@@ -52,6 +54,7 @@
   position: relative;
   width: 100%;
   height: 100%;
+
 }
 .testimonials-content>img{
   position: absolute;

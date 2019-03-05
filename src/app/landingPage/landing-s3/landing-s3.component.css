@@ -12,6 +12,116 @@ section{
     background-size: 40%;
     background-position: top 0% right 5%;
 }
+.mobileVersion{
+    display: none;
+}
+/*desktop version*/
+.desktopVersion{
+    display: flex;
+    width: 95%;
+    height: 370px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: 'Segoe UI';
+}
+.divcontainer{
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    transition-duration: 1.5s;
+    float: left;
+    position: relative;
+}
+.titleDiv{
+    width: 60px;
+    height: 100%;
+    background-color: red;
+    writing-mode: vertical-lr;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 3.5;
+    cursor: default;
+    text-transform: 180;
+    position: absolute;
+
+    right: 0;
+}
+.contentDiv{
+    background: white;
+    height: 100%;
+    display: flex;
+
+    transition-duration: 1.5s;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    opacity: 1;
+}
+.contentDiv>img{
+    width: 55%;
+    margin-left: auto;
+}
+.detailContainer{
+    padding: 20px;
+    padding-left: 25px;
+    transition-duration: 2s;
+}
+.detailContainer>h5{
+    font-weight: bolder;
+    color: #34495e
+}
+.detailContainer>p{
+    color: #e0e0e0;
+}
+
+.detailContainer>button {
+    width: 140px;
+    height: 45px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 41px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    }
+    .detailContainer>button:hover {
+        background-color: #2EE59D;
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.6);
+        color: #fff;
+        transform: translateY(-7px);
+      }
+.description{
+    font-size: 14px;
+}
+.show>.contentDiv{
+    width: 100%;
+}
+.show{
+    width: 100%;
+}
+.hide{
+    width: 60px;
+}
+.hide>.contentDiv{
+    opacity:0;
+}
+
+
+
+
+
+/*mobile version*/
 .card-content {
 	background: #ffffff;
 	border: 4px;
@@ -139,8 +249,28 @@ a.btn {
     padding-left: 30px;
     color: #434344;
   }
+  @media only screen and (min-width : 786px) and (max-width : 1086px)
+{
+    .desktopVersion{
+        height: 310px;
+    }
+    .description{
+        font-size: 10px;
+    }
+    .detailContainer>button {
+        width: 120px;
+        height: 35px;
+        font-size: 10px;
+    }
+}
 @media only screen and (max-width : 786px)
 {
+    .mobileVersion{
+        display: block;
+    }
+    .desktopVersion{
+        display: none;
+    }
   #cards_Container>div>div {
    
         width: 280px !important;
