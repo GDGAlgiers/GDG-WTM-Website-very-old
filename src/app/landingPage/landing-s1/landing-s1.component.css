@@ -1,120 +1,25 @@
 section{
+  height: 100vh;
+    width: 100%;
   position: relative;
+  background-image: url("/assets/header_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+section::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.51);
+}
+
 
 .transition {
   transition: all .4s ease-in-out;
-}
-
-.overlay{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  opacity: .4;
-  z-index: 6;
-}
-
-.gdg_logo{
-  width: 160px;
-  height: 0px;
-  position: absolute;
-  top: 25px;
-  left: 35px;
-  z-index: 9;
-}
-.gdg_logo>img{
-  width: 100%;
-}
-.gdg_logo p{
-  color: #fff;
-  font-size: 27px;
-  font-weight: bold;
-  margin-top: 18px;
-  width: 43%;
-  float: left;
-  font-family: ProductSans;
-}
-.algiers_logo{
-  width: 25%;
-  float: left;
-  display: inline-block;
-  height: 70px;
-}
-.algiers_logo>img{
-  width: 100%;
-  height: 70%;
-  margin-left: 7px;
-}
-.algiers_logo>span{
-  color: white;
-  font-size: 12px;
-  margin-left: 5px;
-  margin-top: -3px;
-  display: inherit;
-}
-
-.carousel .content {
-  display: flex;
-}
-
-.carousel .content .item {
-  width: 100%;
-  display: block;
-}
-
-.carousel .content .item .img {
-  width: 100%;
-  display: block;
-  background-size: cover;
-  background-position: center;
-  height: 0;
-  padding-bottom: 50%;
-}
-
-
-.item {
-  width: 100%;
-  display: block;
-}
-
-.item .img {
-  width: 100%;
-  display: block;
-  background-size: cover;
-  background-position: center;
-  height: 0;
-  padding-bottom: 50%;
-}
-
-.ball {
-  width: 35px;
-  height: 0px;
-  border-radius: 15px;
-  background: black;
-  border: 2px solid;
-  opacity: 0.5;
-  z-index: 99;
-  color: #fff;
-}
-.ball.visible {
-   opacity: 1;
-  z-index: 99;
-  color: #fff;
-}
-
-:host /deep/ .indicators {
-  z-index: 99;
-}
-
-.progress {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 5px;
-  background: #3498db;
-  z-index: 9;
 }
 
 .click-area {
@@ -133,21 +38,31 @@ section{
   color: #fff;
   z-index: 8;
   font-family: ProductSans;
+  bottom: 10px;
+}
+.header-titles img {
+  display: none;
 }
 .header-titles .title{
   font-size: 4vw;
   font-weight: bold;
   margin: 0;
+  bottom: 0;
 }
 .header-titles .sub-title{
   font-size: 2vw;
   margin: 0;
-}
 
-@media (max-width: 769px) {
-  .header{
-    height: 600px;
+}
+@media(max-width:890px)
+{
+  #gdgLogo{
+    height: 90px;
+    padding-top: 1.8vw;
   }
+}
+@media (max-width: 769px) {
+
   .header section.content{
     height: 100%;
   }
@@ -156,33 +71,23 @@ section{
   }
 
   .header-titles{
-    bottom: 40px;
-    display: flex;
-    flex-flow: column;
-    width: 90%;
-    margin: 10px 5%;
+
+    width: 96%;
+    margin: 10px auto;
     font-family: ProductSans;
+    margin-left: 2%;
     left: auto;
   }
   .header-titles .title{
-    order: 2;
-    background: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 10vw;
-    color: #000;
+   display: none
   }
   .header-titles .sub-title{
-    order: 1;
     font-size: 5vw;
     margin: 10px auto;
   }
-  .gdg_logo{
-    left: 50%;
+  .header-titles img {
+    display: block;
   }
-  .gdg_logo>img{
-    position: relative;
-    left: -50%;
-  }
+  
 
 }

@@ -1,45 +1,17 @@
 <section class="header">
   <!-- logo -->
-  <div class="overlay"></div>
-  <div class="gdg_logo">
-    <img src="../../../assets/GDGA_Color.svg" alt="gdg">
-  </div>
   <div class="header-titles">
     <p class="title"><span>We do cool things that matter!</span></p>
     <p class="sub-title cd-headline rotate-1">More than
       <span class="cd-words-wrapper">
-        <b class="is-visible">1500 participant</b>
-        <b>200 member</b>
-        <b>10 event</b>
+        <b class="is-visible">2000 participants</b>
+        <b>280 members</b>
+        <b>25 events</b>
       </span>
+
     </p>
+    <img   src="/assets/cool.svg">
+
   </div>
-  <ngx-hm-carousel
-    (ngModelChange)="indexChanged($event)"
-    [autoplay-speed]="5000"
-    [autoplay]="true"
-    [infinite]="infinite"
-    [between-delay]="2000"
-    class="carousel c-accent">
-
-    <section ngx-hm-carousel-container class="content">
-      <article class="item cursor-pointer"
-               ngx-hm-carousel-item
-               *ngFor="let avatar of avatars">
-        <div class="img"
-             [style.backgroundImage]="'url('+avatar.url+')'">
-        </div>
-      </article>
-    </section>
-
-    <ng-template class="test" #carouselDot let-model>
-      <div class="ball bg-accent"
-           [class.visible]="model.index === model.currentIndex"></div>
-    </ng-template>
-
-    <ng-template #carouselProgress let-progress>
-      <div class="progress"></div>
-    </ng-template>
-
-  </ngx-hm-carousel>
+  
 </section>

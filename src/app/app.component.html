@@ -1,21 +1,21 @@
-<div class="menudiv">
-<ul>
-  <li><a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-    true}" >Home</a></li>
-  <li><a [routerLink]="['/events']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-    true}">Events</a></li>
-  <li><a [routerLink]="['/projects']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-    true}" >Projects</a></li>
-  <li><a [routerLink]="['/gdglife']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-    true}" >GDG Life</a></li>
-  <li><a [routerLink]="['/team']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-    true}"  >Team</a></li>
-</ul>
-</div>
-<img (click)="closeMenu()" id="openBtn" class="hide" src="/assets/options.svg">
-<div id="menumobile" class="menumobile">
+<nav class="menuDesk" [ngClass]="{black: blackMenuLinks}">
   <ul>
-      <li id="closeBtn" > <img src="/assets/close-button.svg" (click)="closeMenu()" alt="close icon"> </li>
+  
+    <li class="link"><a [routerLink]="['/events']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+      true}">Events</a></li>
+    <li class="link"><a [routerLink]="['/projects']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+      true}" >Projects</a></li>
+      <li><a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+        true}" ><img id="gdgLogo"  alt="" src="/assets/GDGA_Color.svg" ></a></li>
+    <li class="link"><a [routerLink]="['/gdglife']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+      true}" >GDG Life</a></li>
+    <li class="link"><a [routerLink]="['/team']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+      true}"  >Team</a></li>
+  </ul>
+  </nav>
+<div id="menumobile" class="menumobile hide">
+  <ul>
+      <li id="closeBtn" > <img class="closeIcon" [src]="closeBtnSrc" (click)="closeMenu()" alt="close icon"> </li>
     <li><a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
       true}" > <span>   Home </span> <img src="/assets/AI_home.svg" alt="Home icon"></a>  </li>
     <li><a [routerLink]="['/events']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:

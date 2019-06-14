@@ -1,109 +1,295 @@
+section {
+  height: 500px;
+}
 .section {
-    position: static;
-    background-image: url("/assets/continuous-line-envelope-opacity-ised.svg");
-    background-repeat: no-repeat;
-    background-position: bottom -2rem left 90%;
-    background-size: 35vw 90%; 
-    
-    padding-top: 3rem; 
-    padding-left: 5vw; /*To center the label and the button */
+  background-image: url("/assets/continuous-line-envelope-opacity-ised.svg");
+  background-repeat: no-repeat;
+  background-position: bottom -2rem left 90%;
+  background-size: 35vw ;
 
-    height: 360px;   
-}
-  
-.section label{
-    display: block;
-    font-size: 7vw;
-    font-family: ProductSans;
-    color: #434344;
-    opacity: 0.25;   
+  padding-top: 3rem;
+
 
 }
 
-#contactUsButton{
-    margin-top: 5rem;
-    margin-left: 3vw; /*to be centered relatively to the label */
-	padding:16px 100px;
+.section label {
+  display: block;
+  font-size: 7vw;
+  font-family: ProductSans;
+  color: #434344;
+  opacity: 0.25;
+  padding-left: 3vw;
+
 }
 
 .GreenButton {
-	background-color:#44c767;
-	border-radius:40px;
-	border:1px solid #18ab29;
-	cursor:pointer;
-	color:#ffffff;
-	font-family: ProductSans;
-    font-size: 2vw;
-    text-shadow:0px 1px 0px #2f6627;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #44c767;
+  border-radius: 40px;
+  border: 1px solid #18ab29;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: ProductSans;
+  font-size: 2vw;
+  text-shadow: 0px 1px 0px #2f6627;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 }
 .GreenButton:hover {
-	background-color:#5cbf2a;
+  background-color: #5cbf2a;
 }
-#mailSVG{ 
-    display: none;
-    width: 80px;
-    height: 80px;  
-    margin-top: 0px;  
-}
+
 
 /* basic responsiveness for smaller screens */
 @media only screen and (max-width: 800px) {
-    .section {
-        height: 250px;
-        background-position: bottom -20px left 130%;
-        background-size: 55vw 270px;
-  
-        padding-top: 3.5rem;
-        padding-left: 5vw;
-      } 
-      .section label{
-          font-size: 9vw;
-      }
-      #contactUsButton{
-          /*margin-top: 0px;
-          margin-left: 10vw; 
-          padding:16px 20px;
-          font-size: 0%; */
-          display: none;
+  .section {
 
-      }
-      #mailSVG{
-        margin-left: 10vw; 
-        display: inline;
-      }
+    background-position: bottom -20px left 130%;
+    background-size: 55vw ;
+
+    padding-top: 3.5rem;
+    padding-left: 5vw;
+  }
+  .section label {
+    font-size: 9vw;
+  }
+
+}
+/*form and animation*/
+section {
+  width: 100%;
+  position: relative;
+}
+.paperDiv {
+  width: 93% !important;
+  height: 50%;
+  position: absolute !important;
+  left: auto;
+  right: auto;
+  margin-left: 3.5%;
+  margin-right: auto;
+  bottom: 0px;
+  z-index: 2;
+  transition-duration: 1s;
+  transition-delay: 3s;
 }
 
+.containerDiv {
+  height: 95%;
+  width: 400px;
+  max-width: 400px;
+  bottom: 0px;
+  left: 100px;
+  position: absolute;
+}
+
+.paperContainer{
+  height: 120%;   
+  overflow: hidden; 
+  position: relative; 
+  bottom: 20%;
+}
+.containerDiv path {
+  transition-duration: 5s;
+  cursor: pointer;
+}
+
+div input {
+  width: 100%;
+  height: 100%;
+  line-height: 20px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: none;
+}
+.envelope {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  cursor: pointer;
+  z-index: 5;
+}
+.envelopeBack {
+  bottom: 55px;
+  z-index: 0;
+}
+.goUp {
+  animation: goOutAnimation 2s forwards;
+}
+.goDown {
+  transition-delay: 0s;
+  animation: goInAnimation 2s forwards;
+  /*z-index: 2;*/
+}
+.open {
+  transform: rotateX(180deg);
+  z-index: 3;
+}
+
+@keyframes goOutAnimation {
+  0% {
+    z-index: 2;
+  }
+  7% {
+    z-index: 4;
+    
+  }
+  20% {
+    z-index: 4;
+  }
+  40% {
+    z-index: 7;
+    bottom: 245px;
+  }
+  50% {
+    
+  }
+  100% {
+    bottom: 10px;
+    z-index: 7;
+  }
+}
+@keyframes goInAnimation {
+  0% {
+    z-index: 7;
+  }
+  20% {
+    bottom: 245px;
+  }
+  70% {
+    z-index: 4;
+  }
+
+  100% {
+    bottom: 0px;
+    z-index: 2;
+  }
+}
+
+@keyframes zIndexTo5 {
+  0% {
+    z-index: 0;
+  }
+
+  100% {
+    z-index: 5;
+  }
+}
+
+@keyframes circle-inner {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(0);
+  }
+  33.3333% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(0.9);
+  }
+  66.6666% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(0);
+  }
+}
+
+/*for paper content*/
+.paper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #fff;
+  max-width: 460px;
+  max-height: 300px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.paper__input {
+  display: inline-block;
+  width: 48%;
+  border-bottom: 1px solid lightgrey;
+  height: 35px;
+}
+.paper__input > input {
+  height: 23px;
+}
+.paper__input-textarea {
+  
+  width: 100%;
+  height: 60%;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    white 0px,
+    white 23px,
+    lightgrey 23px,
+    lightgrey 24px
+  );
+  background-position: 0 10px;
+  background-repeat: no-repeat;
+ 
+}
+.paper__input-textarea > textarea {
+  height: 100%;
+  width: 100%;
+  border: 0px;
+  scrollbar-width: none;
+  background-color: transparent;
+  resize: none;
+}
+.input-name {
+  font-size: 11px;
+  margin-bottom: 5px;
+  color: #6ebcb9;
+}
+
+.input-text {
+  opacity: 0;
+  color: #555;
+}
+.input-text div {
+  opacity: 0;
+}
+
+.input-button {
+  background-color: white;
+  border: 1px solid #6ebcb9;
+  font-size: 12px;
+  padding: 0px 0px 0px;
+  width: 70px;
+  cursor: pointer;
+  margin-left: auto;
+  color: #6ebcb9;
+ 
+}
+
+/*end of form and animation*/
 /* basic responsiveness for x-smaller screens */
 @media only screen and (max-width: 480px) {
-    .section {
-        height: 180px;
-        background-position: bottom -15px left 110%;
-        background-size: 50vw 180px;
-  
-        padding-top: 3rem;
-        padding-left: 3vw; 
+  .section {
+    height: 370px;
+    background-position: bottom 30px left 110%;
+    background-size: 50vw 180px;
 
-      } 
-      .section label{
-          font-size: 9vw; 
-      }
-      #contactUsButton{
-          /*margin-top: 0px;
-          margin-left: 8vw;
-          padding:0px 0px;
-          font-size: 0%; */
-          display: none;
+    padding-top: 3rem;
+  }
+  .section label {
+    font-size: 9vw;
+  }
 
-      }
-
-      #mailSVG{
-        width: 50px;
-        height: 50px;
-        margin-left: 8vw; 
-          margin-left: 8vw;
-        margin-left: 8vw; 
-        display: inline;
-      }
-
+  .containerDiv {
+    width: 300px;
+    left: auto;
+    right: auto;
+    top: 0px;
+  }
+ 
+  .envelopeBack {
+    bottom: 40px;
+    z-index: 0;
+  }
+ 
 }

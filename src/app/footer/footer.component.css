@@ -39,7 +39,7 @@
   }
 
   .footer .footer-logo img{
-      height: 100%;
+      height: 2.4vw;
     }
 
 
@@ -82,6 +82,6 @@
   }  
   @media only screen and (max-width: 460px) {
     .footer{
-        font-size:2vw;
+        font-size:2.7vw;
         }
   }  

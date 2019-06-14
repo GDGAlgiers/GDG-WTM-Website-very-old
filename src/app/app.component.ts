@@ -8,23 +8,44 @@ import { Location } from '@angular/common';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'gdgWebsite';
+  title = 'GDG Algiers';
   showFooter = true;
+  blackMenuLinks = false;
+  closeBtnSrc="assets/threebars.svg"
+  logoSrc = "/assets/GDGA_Color.svg";
+  menuOpen=false;
   constructor(private location: Location, private router: Router) {
-    router.events.subscribe((val: Event) => {
-      this.showFooter = location.path() === '';
-
+    
+    this.router.events.subscribe((val: Event) => {
+      if(!(location.path() === '')){
+        this.showFooter = false;
+        this.blackMenuLinks = true; // make navbar links black if it we are not in home page
+        this.logoSrc="/assets/GDG_Black.svg";
+        console.log(this.logoSrc);
+      }
+      else{
+        this.showFooter = true;
+        this.blackMenuLinks = false; // make navbar links black if it we are not in home page
+        this.logoSrc="/assets/GDGA_Color.svg";
+        console.log(this.logoSrc);
+      }
     });
-
   }
   public ngOnInit() {
-
+    
   }
    closeMenu() {
 
     let menuMobile=document.getElementById("menumobile");
     let openBtn=document.getElementById("openBtn");
     menuMobile.classList.toggle('hide');
-    openBtn.classList.toggle('hide');
+    //openBtn.classList.toggle('hide');
+    if(this.menuOpen)
+    this.closeBtnSrc = "assets/threebars.svg"
+    else
+    this.closeBtnSrc="assets/close-button.svg"
+
+    this.menuOpen=!this.menuOpen;
+
   }
 }

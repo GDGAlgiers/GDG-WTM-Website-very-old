@@ -8,7 +8,7 @@
 	url('/assets/android.svg'), url('/assets/Cloud.svg'), url('/assets/Cloud.svg'),
 	 url('/assets/Cloud.svg'), url('/assets/Cloud.svg') ;
 	background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
-	background-position: 50% 18%,  -30%  140%, 130%  -40%,50% 100%,  13% 15%,  15% 60%,
+	background-position: 50% 38%,  -30%  140%, 130%  -40%,50% 100%,  13% 15%,  15% 60%,
 	80% 8% ,   88% 75% ;
 	  background-size: 45% 40%,35%,35%,32% 30%,15% 13%,15% 13%,10% 13%,18% 20%;
 }
@@ -24,7 +24,7 @@
 			url('/assets/android.svg'), url('/assets/Cloud.svg'), url('/assets/Cloud.svg'),
 			 url('/assets/Cloud.svg'), url('/assets/Cloud.svg') ;
 			background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
-			background-position: 50% 28%,  -10%  110%, 110%  -5%,50% 100%,  13% 15%,  15% 60%,
+			background-position: 50% 38%,  -10%  110%, 110%  -5%,50% 100%,  13% 15%,  15% 60%,
 			80% 8% ,   88% 75% ;
 			  background-size:65% 40%,30%,25%,52%,35% 13%,45% 13%,30% 13%,48% 20%;
 		}

@@ -1,16 +1,17 @@
 .testimonials{
   position: relative;
   width: 100%;
-  height: 500px;
   margin-top: 100px;
   margin-bottom: 50px;
-  overflow-x: hidden;
 
   background-image: url('../../../assets/quotation_g.svg');
   background-size: 35%;
   background-repeat: no-repeat;
   background-position: 5% 25%;
   scrollbar-width: none;
+  padding-top: 70px;
+  overflow: hidden;
+
 
 }
 
@@ -51,7 +52,6 @@
 }
 
 .testimonials-content{
-  position: relative;
   width: 100%;
   height: 100%;
 
@@ -64,33 +64,40 @@
 }
 .testimonials-content h3{
   color: #d4d1d1;
-  position: absolute;
-  right: 15%;
-  font-size: 61px;
+  font-size: 7vw ;
+  text-align: right;
+  padding-right: 30px;
   font-family: 'ProductSans';
 }
 
 .testimonials-articles{
   width: 90%;
   background: #fff;
-  position: absolute;
   border-radius: 10px;
   margin-top: 18px;
   left: 5%;
   top: 160px;
+  margin-left: auto;
+margin-right: auto;
+  
 }
 
 .testimonials-articles article{
-  width: 45%;
+  width: 100%;
   display: inline-block;
   text-align: left;
   padding: 15px;
   height: 100%;
   min-width: 280px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 .testimonials-articles article .image{
-  width: 42%;
+  width: 200px;
   margin: 20px 0 20px 20px;
   border-radius: 10px;
   float: left;
@@ -107,18 +114,19 @@
 
 .testimonials-articles article>div:last-of-type{
   float: right;
-  width: 45%;
+  width:70%;
   margin-top: 20px;
   font-family: ProductSans;
+  padding: 10px;
+  min-width: 250px;
 }
 
 .testimonials-articles article>div p:first-of-type{
   display: inline-block;
   margin: 0;
-  text-align: center;
-  font-size: 25px;
   font-weight: bold;
   color: #0be881;
+  padding: 5px;
 }
 .testimonials-articles article>div i:first-child{
   float: left;
@@ -166,7 +174,7 @@
     left: -60%;
   }
   .testimonials-content h3{
-    font-size: 10vw;
+    font-size: 9vw;
     z-index: 10;
   }
   .testimonials-content>img{
@@ -200,6 +208,7 @@
     background-position: 0% 20%;
   }
   .testimonials-content h3{
+    font-size: 9vw;
     margin: 0;
   }
   .testimonials .left-effect{

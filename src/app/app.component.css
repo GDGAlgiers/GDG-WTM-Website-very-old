@@ -1,103 +1,123 @@
-.active{
-  color: white;
-  background-color: #3498db;
-  border-radius: 15px;
-  padding: 3px 7px;
-}
-.menudiv{
-  position: fixed;
-  width: 100%;
-  text-align: center;
-  z-index: 9;
-  padding-top: 10px;
-}
-.menudiv ul {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  padding: 15px 5px;
-  background-color: white;
-  display: inline;
-}
-.menudiv ul li{
-    display: inline;
-    margin-right: 10px;
-    margin-left:10px;
-  }
-  a{
-    color: #34495e;
-    text-decoration: none;
-  }
 
-  .menumobile{
-    position: fixed;
-    width: 50px;
-    min-height: 200px;
-    text-align: center;
-    z-index: 999;
-    top: 50px;
-    right:10px;
-    border-radius: 50px;
-    background-color: #fff;
+.active {
+  color: #2980b9 !important;
+}
+.menuDesk {  
+  height: 100px;
+  position: absolute;
+  width: 100%;
+  z-index: 89;
+}
+.menuDesk ul {
+  display:flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-right: 5vw;
+  list-style-type: none;
+}
+.link{
+  height: 40px;
+  font-size: 2vw;
+  display: list-item;
+padding: 30px 5vw;
+cursor: pointer;
+}
+.link:last-child{
+  padding-right: 0;
+}
+.link:first-child{
+  padding-left:0;
+}
+
+.link:hover a{
+  color: #2980b9 ;
+}
+#gdgLogo{
+  height: 30px;
+  margin-top: 2.7vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+.link a{
+  text-decoration: none;
+  color: white ;
+
+}
+.black a{
+  color: black;
+}
+
+.menumobile {
+  position: fixed;
+  width: 50px;
+  height: 300px;
+  min-height: 200px;
+  text-align: center;
+  z-index: 999;
+  top: 50px;
+  right: 10px;
+  border-radius: 50px;
+  background-color: #fff;
+  display: none;
+}
+.menumobile ul {
+  list-style-type: none;
+  margin: 25px 0 0 0;
+  padding: 0;
+}
+.menumobile span {
+  display: block;
+}
+.menumobile img {
+  margin: 0 0 3px 0;
+}
+.menumobile .active {
+  border-radius: 0;
+  padding: 0;
+  background-color: transparent;
+  color: #3498db;
+}
+@media only screen and (max-width: 768px) {
+  .menumobile {
+    display: block;
+  }
+  .menuDesk {
     display: none;
-    transition-duration: 1s;
   }
-  .menumobile ul {
-    list-style-type: none;
-    margin: 25px 0 0 0;
-    padding: 0;
-  }
-  .menumobile span{display: block;}
-  .menumobile img{margin: 0 0 3px 0;}
-  .menumobile .active {
-    border-radius: 0;
-    padding: 0;
-    background-color: transparent;
-    color: #3498db;
-  }
-  @media only screen and (max-width : 768px) {.menumobile{display: block; }
-  .menudiv{display: none;}
 }
-#openBtn{
-  position: absolute ;
-  width: 35px;
-  z-index: 1000;
-  right: 30px;
-  top: 35px;
-  transition-duration: 1s;
-}
-#openBtn.hide{
-  position: absolute ;
-  width: 20px;
-  z-index: 1000;
-  right: 30px;
-  top: -40px;
-}
-#menumobile.hide{
-  right:-140px;
+
+#menumobile.hide {
+  height: 50px;
+  width: 50px;
   min-height: 0;
-  opacity: 0;
+  overflow: hidden;
 }
-.menumobile li{
+.hide .closeIcon {
+  content: url("/assets/threebars.svg");
+  width: 20px;
+  height: 20px;
+}
+.menumobile li {
   margin-bottom: 20px;
 }
-a>span{
-  min-width:70px;
- left: -80px;
- position: absolute;
- color: whitesmoke;
- text-align: right;
+a > span {
+  min-width: 70px;
+  left: -80px;
+  position: absolute;
+  color: whitesmoke;
+  text-align: right;
 }
-a.active>span{
-  color:#3498db
+a.active > span {
+  color: #3498db;
 }
-li img{
+.menumobile li > img {
   position: relative;
-  top: -10px;
+  top: -12px;
   width: 15px;
 }
-a>img{
+.menumobile a > img {
   width: 25px;
 }
-a.active>img{
-filter:invert(.5) sepia(1) saturate(5) hue-rotate(175deg);
+.menumobile a.active > img {
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
 }

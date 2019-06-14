@@ -44,9 +44,9 @@
   }
   .gdgLogo {
     position: relative;
-    width: 45px;
-    top: 0px;
-    left: -10px;
+    height: 23px;
+    top: -3px;
+    left: 5px;
   }
   .algiersDiv {
     display: inline-block;
