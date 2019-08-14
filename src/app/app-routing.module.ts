@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'projects', component: NotfoundComponent },
   { path: 'gdglife', component: NotfoundComponent },
   { path: 'team', component: NotfoundComponent },
-  { path: 'events/devfest', component: DevfestComponent },
+  { path: 'events/devfest2k19', component: DevfestComponent },
   { path: '', component: MainLandingComponent },
   { path: '*', component: MainLandingComponent }
 ];
