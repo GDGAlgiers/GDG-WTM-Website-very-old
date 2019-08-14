@@ -6,13 +6,9 @@ import { EventsPageComponent } from './events-page/events-page.component';
 import { DevfestComponent } from './devfest/devfest.component';
 
 const routes: Routes = [
-  { path: 'events', component: EventsPageComponent },
-  { path: 'projects', component: NotfoundComponent },
-  { path: 'gdglife', component: NotfoundComponent },
-  { path: 'team', component: NotfoundComponent },
-  { path: 'events/devfest2k19', component: DevfestComponent },
-  { path: '', component: MainLandingComponent },
-  { path: '*', component: MainLandingComponent }
+
+  { path: '', component: DevfestComponent },
+  { path: '*', component: DevfestComponent }
 ];
 
 @NgModule({
