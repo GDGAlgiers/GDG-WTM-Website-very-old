@@ -18,14 +18,4 @@ export class DevfestComponent implements OnInit, AfterViewInit {
   }
 
 }
-@NgModule({
-  imports: [
-    BrowserModule,
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCSL3loqg7Q7tRLNiZ4xd230pF7KSIFQv0'
-    })
-  ],
-  declarations: [DevfestComponent],
-  bootstrap: [DevfestComponent]
-})
-export class AppModule { }
+

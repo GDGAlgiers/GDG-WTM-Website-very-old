@@ -127,6 +127,9 @@ section{
     min-height: 200px;
     color: #212121;
 }
+.card.little img {
+    max-height: 200px;
+}
 .mentors-section .card.little .card-body{
     padding-top: 0;
     min-height:unset;
