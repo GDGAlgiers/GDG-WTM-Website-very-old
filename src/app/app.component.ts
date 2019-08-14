@@ -12,16 +12,17 @@ export class AppComponent implements OnInit {
   showFooter = true;
   blackMenuLinks = false;
   closeBtnSrc="assets/threebars.svg"
-  logoSrc = "/assets/GDGA_Color.svg";
+  logoSrc = "/assets/GDGA_Color_Black.svg";
   menuOpen=false;
   constructor(private location: Location, private router: Router) {
     
     this.router.events.subscribe((val: Event) => {
-      if(!(location.path() === '')){
+      if(!(location.path() === '')||location.path() === '/events'){
         this.showFooter = false;
         this.blackMenuLinks = true; // make navbar links black if it we are not in home page
-        this.logoSrc="/assets/GDG_Black.svg";
+        this.logoSrc="/assets/GDGA_Color_Black.svg";
         console.log(this.logoSrc);
+        console.log('ddf')
       }
       else{
         this.showFooter = true;

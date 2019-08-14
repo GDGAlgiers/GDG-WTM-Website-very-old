@@ -12,11 +12,15 @@ import { LandingS5Component } from './landingPage/landing-s5/landing-s5.componen
 import { LandingS6Component } from './landingPage/landing-s6/landing-s6.component';
 import { LandingS7Component } from './landingPage/landing-s7/landing-s7.component';
 import { MainLandingComponent } from './landingPage/main-landing/main-landing.component';
-import { MainEventsComponent } from './eventsPage/main-events/main-events.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { AgmCoreModule } from '@agm/core';
+
 import { NotfoundComponent } from './notfound/notfound.component';
+import { EventsPageComponent } from './events-page/events-page.component';
+import { RedFooterComponent } from './red-footer/red-footer.component';
+import { DevfestComponent } from './devfest/devfest.component';
+import { GalleryComponent } from './gallery/gallery.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,16 +32,19 @@ import { NotfoundComponent } from './notfound/notfound.component';
     LandingS6Component,
     LandingS7Component,
     MainLandingComponent,
-    MainEventsComponent,
     FooterComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    EventsPageComponent,
+    RedFooterComponent,
+    DevfestComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgxHmCarouselModule,
     AgmCoreModule.forRoot({
-      apiKey: ''
+      apiKey: 'AIzaSyCSL3loqg7Q7tRLNiZ4xd230pF7KSIFQv0'
     })
   ],
   providers: [],

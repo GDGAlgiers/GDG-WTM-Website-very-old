@@ -1,0 +1,13 @@
+img.rounded{
+    border-radius: 15px;
+    object-fit: cover !important;
+    margin: 5px ;
+}
+@media (max-width:650px){
+img.rounded.big{
+    max-height: 150px !important;
+}
+.max-h-120{
+    max-height: 120px;
+}
+} 

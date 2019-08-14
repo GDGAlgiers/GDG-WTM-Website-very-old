@@ -2,7 +2,7 @@
 body{
   margin: 0;
   background:#f9f9f9 !important;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   -ms-overflow-x: hidden;
 }
 body,html{

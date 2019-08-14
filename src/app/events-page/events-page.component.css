@@ -1,0 +1,125 @@
+.space{
+    height: 100px;
+}
+.flex-container {
+    display: flex;
+    justify-content: left;
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
+
+
+.item-container{
+    width: 40%;
+    margin-top: 200px;
+    margin-left: 5%;
+    margin-right: 5%;
+    min-width: 320px;
+    position: relative;
+    text-align: center;
+
+}
+.item-container.first{
+    margin-top: 40px;
+}
+.item{
+    min-height: 290px;
+    text-align: center;
+}
+.item-effect{
+    position: absolute;
+}
+.pageTitle{
+    display: inline; font-size: 4vw;font-weight: 300px;color: #594A42; border-bottom:1px solid black;
+ text-align: center;padding: 20px;padding-bottom:2px; border-bottom:2px solid #594A42;
+}
+.head-effect{
+    top: -22%; 
+    right: -17%; 
+    transform:rotateZ(-10deg); 
+    width: 38%;
+    height: 70%;
+}
+.head-effect-mob{
+    display: none;
+}
+.item-container .item-effect{
+    height: 160%;
+    width:80%;
+    z-index: -1;
+}
+.top-space{
+    position: relative;
+    top: 250px;
+}
+@media (max-width:800px){
+    .flex-container{
+        justify-content: center;
+    }
+    .item-container{
+        margin-top: 20px;
+        width: 80%;
+    }
+    .top-space{
+        top: 0px;
+    }
+    
+}
+@media (max-width:650px){
+
+    .head-effect{
+        display:none;
+    }
+    .space{
+        height: 30px !important;
+    }
+    .pageTitle{
+        font-size: 8vw;
+    }
+}
+
+.card {
+    border-radius: 55%;
+    width: 100%;
+}
+.myCard-header{
+    position: relative;
+}
+.card .title {
+    text-align: left;
+    position: absolute;
+    bottom: 45px;
+    color: white;
+    font-size: 40px;
+    height: 0px;
+    margin-left: 20px;
+}
+.card-btn{
+    min-width: 120px;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 40%;
+}
+.card {
+    border-radius: 20px !important;
+    /*width: 140%;*/
+}
+.card img {
+    border-radius: 20px 20px 0 0;
+    max-height: 400px;
+}
+.card a {
+    border: solid 2px #2ecc71;
+    border-radius: 10px;
+    color: #2ecc71;
+    margin-top: 25px;
+}
+p {
+    text-align: left;
+}
+.card a:hover{
+    color: #0D9D58;
+}
+.d-flex{
+    align-items: flex-start;
+}
