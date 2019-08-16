@@ -1,4 +1,4 @@
-<nav class="menuDesk" [ngClass]="{black: blackMenuLinks}" style="display: none;">
+<nav class="menuDesk" [ngClass]="{black: blackMenuLinks}">
   <ul>
   
     <li class="link"><a [routerLink]="['/events']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
@@ -13,7 +13,7 @@
       true}"  >Team</a></li>
   </ul>
   </nav>
-<div id="menumobile" class="menumobile hide" style="display: none;">
+<div id="menumobile" class="menumobile hide">
   <ul>
       <li id="closeBtn" > <img class="closeIcon" [src]="closeBtnSrc" (click)="closeMenu()" alt="close icon"> </li>
     <li><a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
@@ -30,3 +30,4 @@
   </div>
 
 <router-outlet></router-outlet>
+<app-footer *ngIf="showFooter"></app-footer>
