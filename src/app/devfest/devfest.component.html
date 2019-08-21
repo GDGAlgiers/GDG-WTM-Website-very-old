@@ -97,7 +97,9 @@
           </div>
           <div class="map-container"
             style="min-height: 100%;width: 100%;margin-left: 20px;border-radius: 15px;overflow: hidden;">
-            <iframe style="height: 100%;width:100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12795.021518625856!2d3.1639106432893174!3d36.70441574077878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e522f3f317461%3A0x215c157a5406653c!2sEcole+Nationale+Sup%C3%A9rieure+d&#39;Informatique!5e0!3m2!1sfr!2sdz!4v1550834572434" frameborder="0"  allowfullscreen></iframe>
+            <iframe style="height: 100%;width:100%;"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12795.021518625856!2d3.1639106432893174!3d36.70441574077878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e522f3f317461%3A0x215c157a5406653c!2sEcole+Nationale+Sup%C3%A9rieure+d&#39;Informatique!5e0!3m2!1sfr!2sdz!4v1550834572434"
+              frameborder="0" allowfullscreen></iframe>
 
           </div>
         </div>
@@ -119,7 +121,8 @@
         <div class=" simpleBar" data-simplebar>
           <div style="width: 1300px;">
             <div class="card little  text-dark bg-white">
-              <img class="card-img-top" src="assets/gallery/machine-learning-cybersecurity-applications.png" alt="Card image cap">
+              <img class="card-img-top" src="assets/gallery/machine-learning-cybersecurity-applications.png"
+                alt="Card image cap">
               <div class="card-body">
                 <p class="title">
                   ML
@@ -142,13 +145,15 @@
               </div>
             </div>
             <div class="card little  text-dark bg-white">
-              <img class="card-img-top" style="height: 200px;width:100%;object-fit: contain;" src="assets/gallery/android-guides.jpg" alt="Card image cap">
+              <img class="card-img-top" style="height: 200px;width:100%;object-fit: contain;"
+                src="assets/gallery/android-guides.jpg" alt="Card image cap">
               <div class="card-body">
                 <p class="title">
                   Android Jetpack
                 </p>
-                <p class="descr">Join us in this workshop about the latest releases of the jetpack libraries and learn how 
-                  to write clean code and avoid biolerplate code  😍
+                <p class="descr">Join us in this workshop about the latest releases of the jetpack libraries and learn
+                  how
+                  to write clean code and avoid biolerplate code 😍
                 </p>
               </div>
             </div>
@@ -203,7 +208,8 @@
                   Flutter
                 </p>
                 <p class="descr">Cross platform apps with a native performance 🚀 for all your mobile devices 😎
-                  "Flutter", Google's way to build beautiful hybrid mobile apps 🤩 in a record time ! following best practices </p>
+                  "Flutter", Google's way to build beautiful hybrid mobile apps 🤩 in a record time ! following best
+                  practices </p>
               </div>
             </div>
             <div class="card little  text-dark bg-white">
@@ -347,7 +353,7 @@
     </div>
   </div>
   <!--CFP Section-->
-  <section >
+  <section>
     <p class="section-title space-top-50">Call For Speakers</p>
     <div class="item-container container">
       <img src="/assets/Green effect.svg" class="item-effect" style="top: -50%; left: -35%; 
@@ -368,8 +374,8 @@ transform:rotateZ(140deg); height: 120%;width:50%;">
         </div>
         <p class="section-title without-underline" style="z-index: 1">Make a step up</p>
         <div style="margin-top: 15px; margin-bottom:70px;" class="rounded-square">
-          <p  style="cursor: pointer; background-color: #4285F4;" (click)="goToLink('https://sessionize.com/devfest-20191661/')"
-           >Apply now</p>
+          <p style="cursor: pointer; background-color: #4285F4;"
+            (click)="goToLink('https://sessionize.com/devfest-20191661/')">Apply now</p>
         </div>
       </div>
     </div>
@@ -392,12 +398,42 @@ transform:rotateZ(140deg); height: 120%;width:50%;">
           </div>
         </div>
         <div class="rounded-square">
-          <p style="cursor: pointer;" (click)="goToLink('https://drive.google.com/file/d/1yHIYckCzvQmfTywBwD6x-Zhdm9Lp_wN3/view')" >Sponsor us ?</p>
+          <p style="cursor: pointer;"
+            (click)="goToLink('https://drive.google.com/file/d/1yHIYckCzvQmfTywBwD6x-Zhdm9Lp_wN3/view')">Sponsor us ?
+          </p>
         </div>
       </div>
     </div>
   </section>
   <!--end Sponsors Section-->
+  <section class="sponsors-section">
+    <p class="section-title" style="z-index: 1">Partners & Sponosrs</p>
+    <p class="section-title without-underline" style="z-index: 1">Sponsored us</p>
+    <div class="item-container">
+      <img src="/assets/Yellow effect.svg" class="item-effect" style="top: -60%; left: -30%; 
+          transform:rotateZ(170deg);height: 120%;width:50%; z-index: 1;">
+      <img src="/assets/Red effect.svg" class="item-effect" style="top: -125%; right: -30%; 
+          transform:rotateZ(155deg);height: 140%;width:60%;z-index: 0; z-index: 1;">
+      <div class="item">
+        <div class="newsletter-subscribe">
+          <div class="container">
+            <div class="intro">
+              <h2 class="text-center section-title" style="font-size: 30px">Subscribe for our Newsletter {{values}}
+                <br /> </h2>
+              <p class="text-center">If you like to get any kind of news about DevFest <br />Sign up for our news letter
+                !</p>
+            </div>
+            <form class="form-inline" method="post">
+              <div class="form-group"><input class="form-control" id="inputEmail" type="email"
+                  placeholder="Your Email" /></div>
+              <div class="form-group"><button type="button" (click)="buttonClick()"
+                  class="btn btn-primary" style="background-color: rgb(5,218,103) !important;">Subscribe </button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 
 <!--footer-->
