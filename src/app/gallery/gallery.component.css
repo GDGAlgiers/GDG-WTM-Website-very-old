@@ -1,5 +1,5 @@
 img.rounded{
-    border-radius: 15px;
+    border-radius: 15px !important;
     object-fit: cover !important;
     margin: 5px ;
 }

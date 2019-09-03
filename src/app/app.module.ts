@@ -21,6 +21,7 @@ import { EventsPageComponent } from './events-page/events-page.component';
 import { RedFooterComponent } from './red-footer/red-footer.component';
 import { DevfestComponent } from './devfest/devfest.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { COCPageComponent } from './coc-page/coc-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +38,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     EventsPageComponent,
     RedFooterComponent,
     DevfestComponent,
-    GalleryComponent
+    GalleryComponent,
+    COCPageComponent
   ],
   imports: [
     BrowserModule,

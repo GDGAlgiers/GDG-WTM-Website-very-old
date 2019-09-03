@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="387.71" height="173.199" viewBox="0 0 387.71 173.199">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f8c7c4;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-7 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #ffd97d;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-3, .cls-5 {
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        stroke: #fdab00;
+      }
+
+      .cls-5 {
+        stroke: #9dbee4;
+      }
+
+      .cls-6, .cls-8 {
+        stroke: none;
+      }
+
+      .cls-8 {
+        fill: #d23933;
+      }
+    </style>
+  </defs>
+  <g id="Hand" transform="translate(-138.939 -202.753)">
+    <rect id="Rectangle_35" data-name="Rectangle 35" class="cls-1" width="49.426" height="98.675" transform="translate(283.817 202.753)"/>
+    <g id="Group_84" data-name="Group 84">
+      <g id="Ellipse_11" data-name="Ellipse 11" class="cls-2" transform="translate(481.753 204.099)">
+        <ellipse class="cls-6" cx="6.271" cy="6.271" rx="6.271" ry="6.271"/>
+        <ellipse class="cls-7" cx="6.271" cy="6.271" rx="4.771" ry="4.771"/>
+      </g>
+      <g id="Ellipse_12" data-name="Ellipse 12" class="cls-2" transform="translate(481.753 228.456)">
+        <ellipse class="cls-6" cx="6.271" cy="6.271" rx="6.271" ry="6.271"/>
+        <ellipse class="cls-7" cx="6.271" cy="6.271" rx="4.771" ry="4.771"/>
+      </g>
+      <line id="Line_31" data-name="Line 31" class="cls-3" y1="29.799" transform="translate(525.149 263.965)"/>
+      <line id="Line_32" data-name="Line 32" class="cls-3" y1="24.14" transform="translate(512.728 260.192)"/>
+      <line id="Line_33" data-name="Line 33" class="cls-3" y1="26.969" transform="translate(500.307 257.363)"/>
+      <line id="Line_34" data-name="Line 34" class="cls-3" y1="49.606" transform="translate(487.887 234.726)"/>
+      <line id="Line_35" data-name="Line 35" class="cls-3" x1="7.675" y1="28.498" transform="translate(468.958 271.598)"/>
+      <path id="Path_142" data-name="Path 142" class="cls-3" d="M331.752,166.6a24.673,24.673,0,0,0,48.518-6.333" transform="translate(144.879 133.499)"/>
+    </g>
+    <g id="Path_144" data-name="Path 144" class="cls-4" transform="translate(91.394 114.831)">
+      <path class="cls-6" d="M214.848,119.463v35.595h45.964l11.824,11.824V119.463Z"/>
+      <path class="cls-8" d="M 217.8483276367188 122.4627380371094 L 217.8483276367188 152.0576477050781 L 260.8122253417969 152.0576477050781 L 262.0548706054688 152.0576477050781 L 262.9335632324219 152.9363403320313 L 269.6365051269531 159.6392822265625 L 269.6365051269531 155.0576477050781 L 269.6365051269531 122.4627380371094 L 217.8483276367188 122.4627380371094 M 214.8483276367188 119.4627380371094 L 272.6365051269531 119.4627380371094 L 272.6365051269531 155.0576477050781 L 272.6365051269531 166.8819274902344 L 260.8122253417969 155.0576477050781 L 214.8483276367188 155.0576477050781 L 214.8483276367188 119.4627380371094 Z"/>
+    </g>
+    <path id="Path_145" data-name="Path 145" class="cls-5" d="M157.668,232.158a30.289,30.289,0,1,0-42.835-42.835L100.79,203.366" transform="translate(39.21 142.734)"/>
+    <rect id="Rectangle_37" data-name="Rectangle 37" class="cls-1" width="10.049" height="10.049" transform="translate(351.735 345.663) rotate(45)"/>
+  </g>
+</svg>

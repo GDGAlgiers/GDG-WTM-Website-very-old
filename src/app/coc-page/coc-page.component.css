@@ -94,11 +94,7 @@ section{
     margin-top:5px;
     font-weight: bold;
 }
-.card p {
-    text-align: left;
-    font-weight: bold;
-    font-size: 18px;
-}
+
 .card a:hover{
     color: #0D9D58;
 }
@@ -226,6 +222,9 @@ margin-top: 100px;
     padding-right: 30px;
     font-size: 40px;
 }
+.card-group > .card{
+    margin:7px;
+}
 .space-top-50{
     margin-top: 50px !important;
 }
@@ -352,136 +351,3 @@ margin-top: 100px;
 
   }  
 
-
-
-
-
-
-
-  /*Nav bar menu*/
-  
-.active {
-    color: #2980b9 !important;
-  }
-  .menuDesk {  
-    height: 100px;
-    position: absolute;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 89;
-  }
-  .menuDesk ul {
-    display:flex;
-    justify-content: center;
-    padding-top: 10px;
-    padding-right: 5vw;
-    list-style-type: none;
-  }
-  .link{
-    height: 40px;
-    font-size: 2vw;
-    display: list-item;
-  padding: 30px 5vw;
-  cursor: pointer;
-  }
-  .link:last-child{
-    padding-right: 0;
-  }
-  .link:first-child{
-    padding-left:0;
-  }
-  
-  .link:hover a{
-    color: #2980b9 ;
-  }
-  #gdgLogo{
-    height: 30px;
-    margin-top: 2.7vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
-  }
-  .link a{
-    text-decoration: none;
-    color: #34495e ;
-  
-  }
-  .black a{
-    color: black;
-  }
-  
-  .menumobile {
-    position: fixed;
-    width: 50px;
-    height: 300px;
-    min-height: 200px;
-    text-align: center;
-    z-index: 999;
-    top: 50px;
-    right: 10px;
-    border-radius: 50px;
-    background-color: #fff;
-    display: none;
-  }
-  .menumobile ul {
-    list-style-type: none;
-    margin: 25px 0 0 0;
-    padding: 0;
-  }
-  .menumobile span {
-    display: block;
-  }
-  .menumobile img {
-    margin: 0 0 3px 0;
-  }
-  .menumobile .active {
-    border-radius: 0;
-    padding: 0;
-    background-color: transparent;
-    color: #3498db;
-  }
-  @media only screen and (max-width: 768px) {
-    .menumobile {
-      display: block;
-    }
-    .menuDesk {
-      display: none;
-    }
-  }
-  
-  #menumobile.hide {
-    height: 50px;
-    width: 50px;
-    min-height: 0;
-    overflow: hidden;
-  }
-  .hide .closeIcon {
-    content: url("/assets/threebars.svg");
-    width: 20px;
-    height: 20px;
-  }
-  .menumobile li {
-    margin-bottom: 20px;
-  }
-  a > span {
-    min-width: 70px;
-    left: -80px;
-    position: absolute;
-    color: whitesmoke;
-    text-align: right;
-  }
-  a.active > span {
-    color: #3498db;
-  }
-  .menumobile li > img {
-    position: relative;
-    top: -12px;
-    width: 15px;
-  }
-  .menumobile a > img {
-    width: 25px;
-  }
-  .menumobile a.active > img {
-    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
-  }
-  
