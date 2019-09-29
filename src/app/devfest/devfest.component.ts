@@ -37,7 +37,7 @@ export class DevfestComponent implements OnInit, AfterViewInit {
   goToLink(url: string) {
     window.open(url, "_blank");
   }
-  buttonClick(event: any) { 
+  buttonClick() { 
     var email = ((document.getElementById("inputEmail") as HTMLInputElement).value);
     console.log(email)
     const id = this._db.createPushId()
