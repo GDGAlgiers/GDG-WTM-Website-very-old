@@ -1,10 +1,10 @@
-<div class="nav-space" style="height: 30px;"></div>
-<div style="overflow-x:hidden">
+<div class="nav-space" style="height: 0;"></div>
+<div style="overflow-x:hidden; padding-top: 30px;">
   <div class="container">
     <!--Intro Section-->
     <section>
       <div class="dvfst-logo-container">
-        <img src="/assets/dvfst2019.svg" class="item-effect">
+        <img src="/assets/DevFest Header.svg">
       </div>
       <div class="item-container">
         <img src="/assets/Yellow effect.svg" class="item-effect" style="top: -50%; left: -30%; 
@@ -43,7 +43,7 @@
 
         <div class="item">
           <div class="card full-text   bg-white">
-            <p class="padding-30" style="text-align: center;color:#594A42;">
+            <p class="padding-30" style="text-align: center;color:#212121;">
               “GDG DevFests are large community-run developer events hosted by Google Developer Groups for their local
               communities around the world“
               <br><br>
@@ -58,6 +58,28 @@
       </div>
     </section>
     <!--end Description Section-->
+
+    <!--COC Section-->
+    <section>
+      <p class="section-title">Conduct of code</p>
+      <div class="item-container">
+        
+
+        <div class="item">
+          <div class="card full-text   bg-white">
+            <p class="padding-30" style="text-align: center;color:#212121;">
+              GDG Algiers & WTM Algiers are dedicated to providing a harassment-free experience for everyone, speakers, sponsors,organizers and participants. Committed to creating an environment that is safe, professional and of mutual trust where diversity and inclusion are valued, and where everyone is entitled to be treated with courtesy and respect. We do not tolerate harassment in any form. Our organisers commit to making conferences, workshops, hackathons and all associated activities productive and enjoyable for everyone.
+            </p>
+            <div style="margin-top: 15px; margin-bottom:70px;" class="rounded-square">
+              <p  style="cursor: pointer; font-size: 15px; background-color: #4285F4;" 
+              (click)="goToLink('https://devfest.gdgalgiers.com/coc')"
+               >Further details</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end COC Section-->
 
     <!--Gallery Section-->
     <section>
@@ -119,7 +141,7 @@
          transform:rotateZ(140deg); height: 90%;width:40%;">
       <div class="item">
         <div class=" simpleBar" data-simplebar>
-          <div style="width: 1300px;">
+          <div style="width: 1300px;min-width: 100%;">
             <div class="card little  text-dark bg-white">
               <img class="card-img-top" src="assets/gallery/machine-learning-cybersecurity-applications.png"
                 alt="Card image cap">
@@ -185,7 +207,7 @@
       <div class="item">
         <div class="simpleBar " data-simplebar>
 
-          <div style="width: 1300px;">
+          <div style="width: 1300px;min-width: 100%;">
             <div class="card little  text-dark bg-white">
               <img class="card-img-top" src="assets/gallery/machine-learning-cybersecurity-applications.png"
                 alt="Card image cap">
@@ -407,18 +429,13 @@ transform:rotateZ(140deg); height: 120%;width:50%;">
   </section>
   <!--end Sponsors Section-->
   <section class="sponsors-section">
-    <p class="section-title" style="z-index: 1">Partners & Sponosrs</p>
-    <p class="section-title without-underline" style="z-index: 1">Sponsored us</p>
     <div class="item-container">
-      <img src="/assets/Yellow effect.svg" class="item-effect" style="top: -60%; left: -30%; 
-          transform:rotateZ(170deg);height: 120%;width:50%; z-index: 1;">
-      <img src="/assets/Red effect.svg" class="item-effect" style="top: -125%; right: -30%; 
-          transform:rotateZ(155deg);height: 140%;width:60%;z-index: 0; z-index: 1;">
+
       <div class="item">
         <div class="newsletter-subscribe">
           <div class="container">
             <div class="intro">
-              <h2 class="text-center section-title" style="font-size: 30px">Subscribe for our Newsletter {{values}}
+              <h2 class="text-center section-title" style="font-size: 30px">Subscribe for our Newsletter
                 <br /> </h2>
               <p class="text-center">If you like to get any kind of news about DevFest <br />Sign up for our news letter
                 !</p>
@@ -437,10 +454,15 @@ transform:rotateZ(140deg); height: 120%;width:50%;">
 </div>
 
 <!--footer-->
+<footer>
+    <img src="/assets/Footer.svg" style="width:100%;">
+</footer>
+<!--
 <footer class="footer">
   <div class="footer-logo" style="font-family: ProductSans">
     <img src="/assets/GDGA_Color.svg" alt="">
   </div>
   <div class="footer-copy">GDG Algiers &copy; 2019</div>
 </footer>
+-->
 <!--end footer-->

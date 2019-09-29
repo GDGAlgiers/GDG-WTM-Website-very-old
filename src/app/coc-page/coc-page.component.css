@@ -1,0 +1,353 @@
+
+/*****items and effects*****/
+.item-container{
+    min-width: 250px;
+    position: relative;
+    text-align: center;
+
+}
+
+.item{
+    min-height: 290px;
+    text-align: center;
+}
+
+.item-container .item-effect{
+    position: absolute;
+    height: 90%;
+    width:40%;
+    min-height: 200px;
+    min-width: 180px;
+    z-index: -1;
+}
+/***** end items and effects*****/
+.dvfst-logo-container{
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+.dvfst-logo-container img{
+    max-height: 120px;
+    max-width: 80%;
+}
+
+section{
+    padding-bottom: 40px;
+}
+.section-title{
+    text-align: center;
+    font-size: 4vw;
+    position: relative;
+    font-weight: 520;
+    color: #212121;
+    margin-bottom: 30px;
+    margin-bottom: 50px;
+}
+.section-title::after{
+    background-color: #212121; 
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 3px;
+    left: 50%;
+    border-radius: 30px;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 250px;
+}
+.section-title.without-underline::after{
+    content: unset;
+}
+.myCard-header{
+    position: relative;
+}
+.card .card-title {
+    text-align: left;
+    position: absolute;
+    bottom: 45px;
+    color: white;
+    font-size: 40px;
+    height: 0px;
+    margin-left: 20px;
+}
+.card-btn{
+    min-width: 120px;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 40%;
+}
+.card {
+    width: 100%;
+    border: transparent;
+    border-radius: 15px !important;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    overflow: hidden;
+}
+.card img {
+    max-height: 400px;
+    object-fit: cover
+}
+.card a {
+    border: solid 1px #2ecc71;
+    border-radius: 5px;
+    color: #2ecc71;
+    margin-top:5px;
+    font-weight: bold;
+}
+
+.card a:hover{
+    color: #0D9D58;
+}
+.card .d-flex{
+    align-items: flex-start;
+}
+
+.full-text p{
+    font-weight: unset;
+    font-weight: 400;
+    color: #212121;
+    font-size: 2vw;
+    text-align: left
+}
+.card.little{
+    margin-bottom: 30px;
+    width: 300px;
+    min-width: 300px;
+    margin: 10px;
+    display: inline-block;
+}
+.card.little .card-body{
+    padding-top: 0;
+    min-height: 200px;
+    color: #212121;
+}
+.card.little img {
+    max-height: 200px;
+    min-height: 200px;
+}
+.mentors-section .card.little .card-body{
+    padding-top: 0;
+    min-height:unset;
+}
+.card.little .title{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 550;
+}
+.card.little .descr{
+    font-weight: unset;
+    font-size: 13px;
+}
+.card.little .organization{
+    font-size: 16px;
+    text-align: center;
+}
+.little-cards-container{
+    /*display: flex;
+    flex-wrap: wrap; 
+    justify-content:space-around;*/
+    text-align: center;
+    flex-direction: row;
+    /* line them up horizontally */
+    flex-wrap: unset;
+    /* allow for scrolling */
+    overflow-x:auto;
+    /* make it smooth on iOS */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+
+}
+.little-cards-container > div{
+    min-width: 100%;
+}
+.hackathon-section .section-title{
+    font-size: 9vw;
+    position: relative;
+    text-align: left;
+    margin-bottom: 0;
+    left: -50px;
+}
+.hackathon-section .section-title::after{
+    display: none;
+}
+.card-horizontal{
+    display: flex;
+    flex: 1 1 auto;
+}
+.card-horizontal img {
+    max-width: 400px;
+    height: 100%;
+    max-height: unset;
+}
+.card.location{
+    width: 50%;
+    min-width: 290px;
+}
+.padding-30{
+    padding: 30px;
+}
+.black{
+    background-color: black;
+}
+.black .section-title{
+    color: white ;
+}
+.black .section-title::after{
+    background-color: white ;
+}
+.black .card,.black .full-text{
+    background-color: #191919 !important;
+}
+.black p{
+    color: white !important;
+}
+.sponsor-logo{
+    padding: 20px;
+    height: 100px;
+    width: 250px;
+    object-fit: contain
+}
+.rounded-square{
+
+margin-top: 100px;
+}
+.rounded-square p{
+    background-color: #F2C40D;
+    color: white;
+    border-radius: 20px;
+    min-width: 300px;
+    display: inline;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 40px;
+}
+.card-group > .card{
+    margin:7px;
+}
+.space-top-50{
+    margin-top: 50px !important;
+}
+
+@media (max-width:650px){
+    .card .d-flex{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section-title{
+        font-size: 9vw;
+    }
+    .section-title::after{
+        width: 180px;
+    }
+    .card.little .card-body{
+        min-height: unset;
+    }
+    .full-text p{
+        font-size: 4vw;
+    }
+    .hackathon-section .section-title{
+        font-size: 9vw;
+        text-align: center;
+        left: unset;
+    }
+    
+    .card-horizontal{
+        display: unset;
+    }
+    .card-horizontal img {
+        max-height: 300px;
+        max-width: unset;
+    }
+    .map-container{
+        display: none;
+    }
+
+    .little-cards-container{
+        justify-content:unset !important;
+    
+    }
+    
+}
+@media (max-width:850px){
+    .nav-space{
+        height: 20px !important;
+    }
+}
+/********Footer********/
+.footer{
+    height: 15vw;
+    width: 100%;
+    background-color: #2ECC71;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #e9e9e9;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: ProductSans;
+    font-size:1.3vw;
+    text-align: right;
+    position: absolute;
+}
+.footer::before { 
+    content: " ";
+    position: absolute;
+    height: 95%;
+    width: 120%;
+    top: -30%;
+    left: -7%;
+    background-color: #f9f9f9;
+    border-radius: 50% / 90%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    transform: rotateZ(2deg);
+    overflow: hidden;
+  }
+
+  .footer div {
+      position: absolute;
+      bottom: 3px;
+  }
+
+  .footer .footer-logo {
+
+      padding-left:8px;
+  }
+
+  .footer .footer-logo img{
+      height: 2.8vw;
+    }
+  .footer .footer-copy{
+    flex-grow: 1;
+    right: 20px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .footer{
+        font-size:2.7vw;
+        }
+  }  
+  @media only screen and (max-width: 460px) {
+    .footer{
+        font-size:3vw;
+        padding-bottom: 20px;
+        height: 130px;
+        }
+    .footer::before { 
+        width: 180%;
+        top: -64px;
+        transform: rotateZ(6deg);
+
+        left: -25%;
+    }
+    .footer  div{
+        bottom: 10px;
+    }
+    .footer .footer-logo img{
+        height: 4.7vw;
+      }
+
+  }  
+

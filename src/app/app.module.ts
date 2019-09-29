@@ -23,6 +23,7 @@ import { EventsPageComponent } from './events-page/events-page.component';
 import { RedFooterComponent } from './red-footer/red-footer.component';
 import { DevfestComponent } from './devfest/devfest.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { COCPageComponent } from './coc-page/coc-page.component';
 import { environment } from 'src/environments/environment';
 
 
@@ -51,7 +52,8 @@ const config = {
     EventsPageComponent,
     RedFooterComponent,
     DevfestComponent,
-    GalleryComponent
+    GalleryComponent,
+    COCPageComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase), // firestore

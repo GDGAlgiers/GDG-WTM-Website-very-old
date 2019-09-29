@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="429.254" height="120.907" viewBox="0 0 429.254 120.907">
+  <defs>
+    <style>
+      .cls-1, .cls-10, .cls-2, .cls-4, .cls-7, .cls-8 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #a0d0a5;
+      }
+
+      .cls-1, .cls-2, .cls-4, .cls-8 {
+        stroke-linecap: round;
+        stroke-width: 3px;
+      }
+
+      .cls-1, .cls-2, .cls-4, .cls-7, .cls-8 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke: #4fa13a;
+      }
+
+      .cls-3 {
+        fill: #34a853;
+      }
+
+      .cls-4 {
+        stroke: #d23933;
+      }
+
+      .cls-5 {
+        fill: #f8c7c4;
+      }
+
+      .cls-6 {
+        fill: #9dbee4;
+      }
+
+      .cls-7, .cls-8 {
+        stroke: #287fc3;
+      }
+
+      .cls-7 {
+        stroke-width: 0.971px;
+      }
+
+      .cls-9 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Smiley" transform="translate(-292.782 -447.796)">
+    <path id="Path_156" data-name="Path 156" class="cls-1" d="M294.282,464.861a16.843,16.843,0,0,1,33.687,0V503.1h30.039" transform="translate(0 10.037)"/>
+    <path id="Path_157" data-name="Path 157" class="cls-2" d="M335.515,464.861a16.843,16.843,0,0,1,33.687,0" transform="translate(20.465 10.037)"/>
+    <path id="Path_158" data-name="Path 158" class="cls-3" d="M369.477,500.224a32.531,32.531,0,1,1-65.063,0Z" transform="translate(5.029 35.947)"/>
+    <g id="Ellipse_21" data-name="Ellipse 21" class="cls-4" transform="translate(467.039 489.327)">
+      <circle class="cls-9" cx="6.082" cy="6.082" r="6.082"/>
+      <circle class="cls-10" cx="6.082" cy="6.082" r="4.582"/>
+    </g>
+    <circle id="Ellipse_22" data-name="Ellipse 22" class="cls-5" cx="6.082" cy="6.082" r="6.082" transform="translate(515.85 489.327)"/>
+    <g id="Ellipse_23" data-name="Ellipse 23" class="cls-4" transform="translate(564.662 489.327)">
+      <circle class="cls-9" cx="6.082" cy="6.082" r="6.082"/>
+      <circle class="cls-10" cx="6.082" cy="6.082" r="4.582"/>
+    </g>
+    <rect id="Rectangle_48" data-name="Rectangle 48" class="cls-6" width="41.059" height="101.302" transform="translate(722.036 549.098) rotate(180)"/>
+    <path id="Path_159" data-name="Path 159" class="cls-7" d="M569.325,465.9" transform="translate(136.508 18.911)"/>
+    <line id="Line_45" data-name="Line 45" class="cls-8" x1="27.873" transform="translate(667.041 523.323)"/>
+    <line id="Line_46" data-name="Line 46" class="cls-8" x1="27.873" transform="translate(667.041 501.622)"/>
+  </g>
+</svg>

@@ -4,9 +4,10 @@ import { MainLandingComponent } from './landingPage/main-landing/main-landing.co
 import { NotfoundComponent } from './notfound/notfound.component';
 import { EventsPageComponent } from './events-page/events-page.component';
 import { DevfestComponent } from './devfest/devfest.component';
+import { COCPageComponent } from './coc-page/coc-page.component';
 
 const routes: Routes = [
-
+  { path: 'coc', component: COCPageComponent },
   { path: '', component: DevfestComponent },
   { path: '*', component: DevfestComponent }
 ];
