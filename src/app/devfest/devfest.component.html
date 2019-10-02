@@ -564,9 +564,9 @@ transform:rotateZ(140deg); height: 120%;width:50%;">
                 !</p>
             </div>
             <form class="form-inline" method="post">
-              <div class="form-group"><input class="form-control" id="inputEmail" type="email"
+              <div class="form-group"><input name="email" [(ngModel)]="newEmail" class="form-control" id="inputEmail" type="email"
                   placeholder="Your Email" /></div>
-              <div class="form-group"><button type="button" (click)="buttonClick()" class="btn btn-primary"
+              <div class="form-group"><button type="button" (click)="submitEmail()" class="btn btn-primary"
                   style="background-color: rgb(5,218,103) !important;">Subscribe </button></div>
             </form>
           </div>

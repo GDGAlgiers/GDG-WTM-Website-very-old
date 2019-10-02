@@ -25,7 +25,10 @@ import { DevfestComponent } from './devfest/devfest.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { COCPageComponent } from './coc-page/coc-page.component';
 import { environment } from 'src/environments/environment';
+import { FormsModule } from '@angular/forms';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 const config = {
   apiKey: "AIzaSyCva3CnSLIF_CvE2ZV0V8858xyvbhrKsbI",
@@ -61,9 +64,12 @@ const config = {
     BrowserModule,
     AppRoutingModule,
     NgxHmCarouselModule,
+    FormsModule, // <<<=== missing
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCSL3loqg7Q7tRLNiZ4xd230pF7KSIFQv0'
-    })
+    }),
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot() // ToastrModule added
   ],
   providers: [],
   bootstrap: [AppComponent]
