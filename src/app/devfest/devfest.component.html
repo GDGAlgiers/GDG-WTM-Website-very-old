@@ -37,9 +37,9 @@
       <p class="section-title">Event Description</p>
       <div class="item-container">
         <img src="/assets/Green effect.svg" class="item-effect" style="top: -50%; left: -30%; 
-    transform:rotateZ(180deg);height: 120%;width:50%;">
+    transform:rotateZ(180deg);height: 120%;width:50%; display: none;">
         <img src="/assets/Red effect.svg" class="item-effect" style="bottom: -50%; right: -30%; 
-    transform:rotateZ(140deg); height: 120%;width:50%;">
+    transform:rotateZ(140deg); height: 120%;width:50%; display: none;">
 
         <div class="item">
           <div class="card full-text   bg-white">
@@ -58,28 +58,6 @@
       </div>
     </section>
     <!--end Description Section-->
-
-    <!--COC Section-->
-    <section>
-      <p class="section-title">Conduct of code</p>
-      <div class="item-container">
-        
-
-        <div class="item">
-          <div class="card full-text   bg-white">
-            <p class="padding-30" style="text-align: center;color:#212121;">
-              GDG Algiers & WTM Algiers are dedicated to providing a harassment-free experience for everyone, speakers, sponsors,organizers and participants. Committed to creating an environment that is safe, professional and of mutual trust where diversity and inclusion are valued, and where everyone is entitled to be treated with courtesy and respect. We do not tolerate harassment in any form. Our organisers commit to making conferences, workshops, hackathons and all associated activities productive and enjoyable for everyone.
-            </p>
-            <div style="margin-top: 15px; margin-bottom:70px;" class="rounded-square">
-              <p  style="cursor: pointer; font-size: 15px; background-color: #4285F4;" 
-              (click)="goToLink('https://devfest.gdgalgiers.com/coc')"
-               >Further details</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--end COC Section-->
 
     <!--Gallery Section-->
     <section>
@@ -119,7 +97,7 @@
           <div class="map-container"
             style="min-height: 100%;width: 100%;margin-left: 20px;border-radius: 15px;overflow: hidden;">
             <iframe style="height: 100%;width:100%;"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.97207970611!2d3.14857091528772!3d36.723231779964536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e52692905dcdf%3A0x2bb008bbddc747d3!2sPolytechnic%20School%20of%20Algiers!5e0!3m2!1sen!2sdz!4v1569795612713!5m2!1sen!2sdz"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.97207970611!2d3.14857091528772!3d36.723231779964536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e52692905dcdf%3A0x2bb008bbddc747d3!2sPolytechnic%20School%20of%20Algiers!5e0!3m2!1sen!2sdz!4v1569795612713!5m2!1sen!2sdz"
               frameborder="0" allowfullscreen></iframe>
 
 
@@ -130,16 +108,18 @@
     </section>
     <!--end Location Section-->
   </div>
+
+
   <!--Workshps Section-->
   <section>
     <p class="section-title">Workshops</p>
     <div class="item-container">
-      <img src="/assets/Yellow effect.svg" class="item-effect" style="top: -20%; left: -40%; 
-    transform:rotateZ(180deg);height: 120%;width:50%;">
-      <img src="/assets/Red effect.svg" class="item-effect" style="top: -30%; right: -40%; 
-     transform:rotateZ(150deg); height: 120%;width:50%;">
-      <img src="/assets/Blue effect.svg" class="item-effect" style="bottom: -40%; right: -30%; 
-         transform:rotateZ(140deg); height: 90%;width:40%;">
+
+
+      <img src="/assets/Green effect.svg" class="item-effect"
+        style="top: -40%; left: -35%; transform:rotateZ(-190deg); height: 100%;width:60%;z-index: 0;">
+      <img src="/assets/Red effect.svg" class="item-effect"
+        style="bottom: -50%; right: -35%; transform:rotateZ(-40deg); height: 100%;width:60%;z-index: 0;">
       <div class="item">
         <div class=" simpleBar" data-simplebar>
           <div style="width: 1300px;min-width: 100%;">
@@ -197,14 +177,62 @@
     </div>
   </section>
   <!--end Workshops Section-->
+
+  <!--Trainers Section-->
+  <section>
+    <p class="section-title">Trainers</p>
+    <div class="item-container">
+      <img src="/assets/Yellow effect.svg" class="item-effect" style="top: -20%; left: -25%; 
+          transform:rotateZ(180deg);height: 120%;width:50%;">
+      <img src="/assets/Red effect.svg" class="item-effect" style="top: -30%; right: -40%; 
+           transform:rotateZ(150deg); height: 120%;width:50%; display: none;">
+
+      <div class="item">
+        <div class="simpleBar little-cards-container">
+          <!--div>
+            <div class="card little  text-dark bg-white">
+              <img class="card-img-top" src="assets/gallery/azzadine.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <p class="title">
+                  Azzeddine CHENINE
+                </p>
+                <p class="organization">Android Mentor</p>
+              </div>
+            </div>
+            <div class="card little  text-dark bg-white">
+              <img class="card-img-top" src="assets/gallery/djamel.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <p class="title">
+                  Djamaleddine BELILET
+                </p>
+                <p class="organization">Node Js & React Mentor</p>
+              </div>
+            </div>
+            <div class="card little  text-dark bg-white">
+              <img class="card-img-top" src="assets/gallery/hadjer" alt="Card image cap">
+              <div class="card-body">
+                <p class="title">
+                  Hadjer BENMEZIANE
+                </p>
+                <p class="organization">Machine learning Mentor</p>
+              </div>
+            </div>
+
+          </div-->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end Trainers Section-->
+
   <!--Conferences Section-->
   <section>
     <p class="section-title">Conferences</p>
     <div class="item-container">
-      <img src="/assets/Green effect.svg" class="item-effect" style="top: -60%; left: -30%; 
-      transform:rotateZ(180deg);height: 120%;width:40%;">
-      <img src="/assets/Red effect.svg" class="item-effect" style="bottom: -60%; right: -20%; 
-  transform:rotateZ(150deg); height: 100%;width:30%;z-index: 0;">
+
+      <img src="/assets/Blue effect.svg" class="item-effect"
+        style="bottom: -20%; right: -40%; transform:rotateZ(140deg); height: 140%;width:80%;">
+
       <div class="item">
         <div class="simpleBar " data-simplebar>
 
@@ -268,6 +296,55 @@
     </div>
   </section>
   <!--end Conferences Section-->
+
+  <!--Speakers Section-->
+  <section>
+    <p class="section-title">Speakers</p>
+    <div class="item-container">
+
+      <img src="/assets/Green effect.svg" class="item-effect"
+        style="top: -60%; left: -30%; transform:rotateZ(180deg);height: 120%;width:40%;">
+      <img src="/assets/Red effect.svg" class="item-effect"
+        style="bottom: -60%; right: -20%; transform:rotateZ(150deg); height: 100%;width:30%;z-index: 0;">
+
+      <div class="item">
+        <div class="simpleBar little-cards-container">
+          <!--div>
+            <div class="card little  text-dark bg-white">
+              <img class="card-img-top" src="assets/gallery/azzadine.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <p class="title">
+                  Azzeddine CHENINE
+                </p>
+                <p class="organization">Android Mentor</p>
+              </div>
+            </div>
+            <div class="card little  text-dark bg-white">
+              <img class="card-img-top" src="assets/gallery/djamel.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <p class="title">
+                  Djamaleddine BELILET
+                </p>
+                <p class="organization">Node Js & React Mentor</p>
+              </div>
+            </div>
+            <div class="card little  text-dark bg-white">
+              <img class="card-img-top" src="assets/gallery/hadjer" alt="Card image cap">
+              <div class="card-body">
+                <p class="title">
+                  Hadjer BENMEZIANE
+                </p>
+                <p class="organization">Machine learning Mentor</p>
+              </div>
+            </div>
+
+          </div-->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end Speakers Section-->
+
   <div class="black">
     <div class="container">
       <!--Hackathon Section-->
@@ -395,10 +472,10 @@ transform:rotateZ(140deg); height: 120%;width:50%;">
             So what are you waiting for?
           </p>
         </div>
-        <p class="section-title without-underline" style="z-index: 1">Make a step up</p>
+        <p class="section-title without-underline" style="z-index: 1; margin-top: 2%;">You've just missed it</p>
         <div style="margin-top: 15px; margin-bottom:70px;" class="rounded-square">
-          <p style="cursor: pointer; background-color: #4285F4;"
-            (click)="goToLink('https://sessionize.com/devfest-20191661/')">Apply now</p>
+          <p style="cursor: not-allowed; background-color: #4285F4; opacity: 0.7;">Apply now</p>
+          <!--(click)="goToLink('https://sessionize.com/devfest-20191661/')"-->
         </div>
       </div>
     </div>
@@ -407,10 +484,26 @@ transform:rotateZ(140deg); height: 120%;width:50%;">
   <!--Sponsors Section-->
   <section class="sponsors-section">
     <p class="section-title" style="z-index: 1">Partners & Sponosrs</p>
+    <p class="section-title without-underline" style="z-index: 1">Organizers</p>
+    <div class="item-container">
+      <img src="/assets/Yellow effect.svg" class="item-effect" style="top: -60%; left: -30%; 
+            transform:rotateZ(170deg);height: 120%;width:50%; display: none;">
+      <img src="/assets/Red effect.svg" class="item-effect" style="top: -125%; right: -30%; 
+            transform:rotateZ(155deg);height: 140%;width:60%;z-index: 0; display: none">
+      <div class="item" style="margin-bottom: -8%">
+        <div class="simpleBar little-cards-container">
+          <div style="width: 670px;">
+            <img class="card little" style="padding: 1%;" src="../../assets/GDG_Algiers_Logo_Dark.svg " height="100px">
+            <img class="card little" style="padding: 0.5%;" src="../../assets/WTMAlgiersLogoDark.svg" height="100px">
+          </div>
+        </div>
+      </div>
+    </div>
+
     <p class="section-title without-underline" style="z-index: 1">Sponsored us</p>
     <div class="item-container">
       <img src="/assets/Yellow effect.svg" class="item-effect" style="top: -60%; left: -30%; 
-          transform:rotateZ(170deg);height: 120%;width:50%;">
+          transform:rotateZ(170deg);height: 120%;width:50%; display: none;">
       <img src="/assets/Red effect.svg" class="item-effect" style="top: -125%; right: -30%; 
           transform:rotateZ(155deg);height: 140%;width:60%;z-index: 0; display: none">
       <div class="item">
@@ -429,7 +522,36 @@ transform:rotateZ(140deg); height: 120%;width:50%;">
     </div>
   </section>
   <!--end Sponsors Section-->
-  <section class="sponsors-section">
+
+  <!--COC Section-->
+  <section>
+    <p class="section-title">Code of Conduct</p>
+    <div class="item-container container">
+
+      <img src="/assets/Yellow effect.svg" class="item-effect" style="top: -60%; left: -30%; 
+          transform:rotateZ(170deg);height: 120%;width:50%;">
+      <img src="/assets/Blue effect.svg" class="item-effect" style="top: 60%; right: -25%; 
+          transform:rotateZ(-45deg);height: 100%;width:40%;z-index: 0;">
+
+      <div class="item">
+        <div class="card full-text   bg-white">
+          <p class="padding-30" style="text-align: center;color:#212121;">
+            GDG Algiers & WTM Algiers are dedicated to providing a harassment-free experience for everyone, speakers,
+            sponsors,organizers and participants. Committed to creating an environment that is safe, professional and of
+            mutual trust where diversity and inclusion are valued, and where everyone is entitled to be treated with
+            courtesy and respect. We do not tolerate harassment in any form. Our organisers commit to making
+            conferences, workshops, hackathons and all associated activities productive and enjoyable for everyone.
+          </p>
+          <div style="margin-top: 15px; margin-bottom:70px;" class="rounded-square">
+            <p style="cursor: pointer; font-size: 15px; background-color: #4285F4;"
+              (click)="goToLink('https://devfest.gdgalgiers.com/coc')">Further details</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end COC Section-->
+  <section>
     <div class="item-container">
 
       <div class="item">
@@ -444,8 +566,8 @@ transform:rotateZ(140deg); height: 120%;width:50%;">
             <form class="form-inline" method="post">
               <div class="form-group"><input class="form-control" id="inputEmail" type="email"
                   placeholder="Your Email" /></div>
-              <div class="form-group"><button type="button" (click)="buttonClick()"
-                  class="btn btn-primary" style="background-color: rgb(5,218,103) !important;">Subscribe </button></div>
+              <div class="form-group"><button type="button" (click)="buttonClick()" class="btn btn-primary"
+                  style="background-color: rgb(5,218,103) !important;">Subscribe </button></div>
             </form>
           </div>
         </div>
@@ -456,7 +578,7 @@ transform:rotateZ(140deg); height: 120%;width:50%;">
 
 <!--footer-->
 <footer>
-    <img src="/assets/Footer.svg" style="width:100%;">
+  <img src="/assets/Footer.svg" style="width:100%;">
 </footer>
 <!--
 <footer class="footer">
