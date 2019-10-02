@@ -29,6 +29,7 @@ import { FormsModule } from '@angular/forms';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import {CountDown} from 'ng2-date-countdown';
 
 const config = {
   apiKey: "AIzaSyCva3CnSLIF_CvE2ZV0V8858xyvbhrKsbI",
@@ -56,7 +57,8 @@ const config = {
     RedFooterComponent,
     DevfestComponent,
     GalleryComponent,
-    COCPageComponent
+    COCPageComponent,
+    CountDown
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase), // firestore

@@ -495,3 +495,20 @@ section{
   color: #fff;
   outline: 0 !important
 }
+/deep/ .measurements {
+  text-align: center;
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  border-left: solid 4px #e9e9e9;
+}
+/deep/ .measurements p {
+  border-bottom: solid 4px #e9e9e9;
+}
+/deep/  .divider {
+  font-size: 30px;
+  width: 4px;
+ }
+/deep/ .measurements p { 
+  font-size: 30px;
+  font-weight: bolder;
+}

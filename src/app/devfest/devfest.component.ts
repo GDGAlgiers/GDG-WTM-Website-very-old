@@ -40,18 +40,9 @@ export class DevfestComponent implements OnInit, AfterViewInit {
   goToLink(url: string) {
     window.open(url, '_blank');
   }
-  buttonClick() {
-    var email = ((document.getElementById('inputEmail') as HTMLInputElement).value);
-
-    const id = this._db.createPushId();
-    const item: Item = { id, email };
-    console.log(item);
-    this.itemRef.push(item).catch(err => console.log(err));
-  }
   submitEmail() {
     let email=this.newEmail
     let okay = this.validateEmail(email)
-
     if (okay) {
       this.toast.success("Your email is saved !","Email")
       const id = this._db.createPushId();
