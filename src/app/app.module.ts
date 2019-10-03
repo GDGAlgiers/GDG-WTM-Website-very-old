@@ -30,15 +30,19 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import {CountDown} from 'ng2-date-countdown';
+import { AgendaComponent } from './agenda/agenda.component';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+
 
 const config = {
-  apiKey: "AIzaSyCva3CnSLIF_CvE2ZV0V8858xyvbhrKsbI",
-  authDomain: "travelmantics-8c80c.firebaseapp.com",
-  databaseURL: "https://travelmantics-8c80c.firebaseio.com",
-  projectId: "travelmantics-8c80c",
-  storageBucket: "travelmantics-8c80c.appspot.com",
-  messagingSenderId: "922549820148",
-  appId: "1:922549820148:web:1b0d208174d7d2d6"
+  apiKey: 'AIzaSyCva3CnSLIF_CvE2ZV0V8858xyvbhrKsbI',
+  authDomain: 'travelmantics-8c80c.firebaseapp.com',
+  databaseURL: 'https://travelmantics-8c80c.firebaseio.com',
+  projectId: 'travelmantics-8c80c',
+  storageBucket: 'travelmantics-8c80c.appspot.com',
+  messagingSenderId: '922549820148',
+  appId: '1:922549820148:web:1b0d208174d7d2d6'
 };
 @NgModule({
   declarations: [
@@ -58,7 +62,8 @@ const config = {
     DevfestComponent,
     GalleryComponent,
     COCPageComponent,
-    CountDown
+    CountDown,
+    AgendaComponent,
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase), // firestore
@@ -71,7 +76,9 @@ const config = {
       apiKey: 'AIzaSyCSL3loqg7Q7tRLNiZ4xd230pF7KSIFQv0'
     }),
     BrowserAnimationsModule, // required animations module
-    ToastrModule.forRoot() // ToastrModule added
+    ToastrModule.forRoot(), // ToastrModule added
+    TabsModule.forRoot(),
+    TooltipModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
