@@ -1,11 +1,16 @@
+@import "../node_modules/ngx-toastr/toastr.css";
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
 /* You can add global styles to this file, and also import other style files */
-body{
+
+body {
   margin: 0;
-  background:#f9f9f9 !important;
+  background: #f9f9f9 !important;
   overflow-x: hidden !important;
   -ms-overflow-x: hidden;
 }
-body,html{
-    margin: 0;
-    padding: 0;
+
+body,
+html {
+  margin: 0;
+  padding: 0;
 }

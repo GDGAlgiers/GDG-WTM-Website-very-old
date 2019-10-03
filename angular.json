@@ -27,7 +27,7 @@
               "src/styles.css",
               "src/customFonts.css",
               "src/assets/styles/textStyle.css",
-              "node_modules/simplebar/dist/simplebar.min.css"
+              "node_modules/simplebar/dist/simplebar.min.css",
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
