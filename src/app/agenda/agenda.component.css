@@ -1,4 +1,5 @@
-::ng-deep .customClass>ul,::ng-deep .subClass>ul {
+::ng-deep .customClass>ul,
+::ng-deep .subClass>ul {
   margin-bottom: 16px;
   border-bottom: none;
 }
@@ -11,62 +12,71 @@
   margin-left: 10%;
 }
 
-::ng-deep .customClass>ul li a,::ng-deep .subClass>ul li a {
+::ng-deep .customClass>ul li a,
+::ng-deep .subClass>ul li a {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   border-radius: 5px !important;
+  padding: 1.1vw;
+  font-weight: bolder;
+  background: white;
 }
 
 ::ng-deep .subClass>ul li.nav-item {
   width: 30%;
 }
-::ng-deep .subClass>ul li:nth-child(2),::ng-deep .subClass>ul li:nth-child(3)  {
-    margin-left: 5%;
+
+::ng-deep .subClass>ul li:nth-child(2),
+::ng-deep .subClass>ul li:nth-child(3) {
+  margin-left: 5%;
 }
 
 
 .itemCard {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    border-radius: 5px !important;
-    background: white;
-    margin-bottom: 2%;
-    margin-left: 2%;
-    text-align: left;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 5px !important;
+  background: white;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  text-align: left;
 }
 
 .itemCard * {
-    margin-left: 8px;
-    padding-right: 8px;
+  margin-left: 8px;
+  padding-right: 8px;
 }
 
 div.itemCard span {
-    color: #b0bec5;
+  color: #b0bec5;
 }
 
 div.itemBorder {
-    padding: 0;
-    font-size: 0;
-    border-radius: 15px !important;
+  padding: 0;
+  font-size: 0;
+  border-radius: 15px !important;
 }
+
 div.blueItem {
-    border-left: solid 6px blue;
+  border-left: solid 6px blue;
 }
 
 div.redItem {
-    border-left: solid 6px red;
+  border-left: solid 6px red;
 }
 
 div.yellowItem {
-    border-left: solid 6px #ffc107;
+  border-left: solid 6px #ffc107;
 }
+
 div.greenItem {
-    border-left: solid 6px #28a745;
+  border-left: solid 6px #28a745;
 }
+
 .longItem {
-    display: flex;
-    margin-left: 0;
+  display: flex;
+  margin-left: 0;
 }
