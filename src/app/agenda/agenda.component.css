@@ -6,6 +6,7 @@
 
 ::ng-deep .customClass>ul li {
   width: 45%;
+  opacity: 0.6;
 }
 
 ::ng-deep .customClass>ul li:nth-child(2) {
@@ -23,13 +24,28 @@
 
 ::ng-deep .subClass>ul li.nav-item {
   width: 30%;
+  opacity: 0.6;
+}
+
+::ng-deep .customClass>ul li.nav-item:hover,
+::ng-deep .subClass>ul li.nav-item:hover {
+  opacity: 1;
+}
+
+::ng-deep .customClass>ul li.nav-item.active,
+::ng-deep .subClass>ul li.nav-item.active {
+  opacity: 1 !important;
+}
+
+::ng-deep .customClass>ul .nav-link,
+::ng-deep .subClass>ul .nav-link {
+  color: black;
 }
 
 ::ng-deep .subClass>ul li:nth-child(2),
 ::ng-deep .subClass>ul li:nth-child(3) {
   margin-left: 5%;
 }
-
 
 .itemCard {
   display: inline-flex;
@@ -55,28 +71,34 @@ div.itemCard span {
 }
 
 div.itemBorder {
-  padding: 0;
-  font-size: 0;
-  border-radius: 15px !important;
+  border-radius: 15px;
 }
 
 div.blueItem {
-  border-left: solid 6px blue;
+  background:  blue;
 }
 
 div.redItem {
-  border-left: solid 6px red;
+  background:  red;
 }
 
 div.yellowItem {
-  border-left: solid 6px #ffc107;
+  background:  #ffc107;
 }
 
 div.greenItem {
-  border-left: solid 6px #28a745;
+  background:  #28a745;
 }
 
 .longItem {
   display: flex;
   margin-left: 0;
+}
+
+.shortItem{
+  min-width: 23%;
+}
+
+.first{
+  margin-left: 0%;
 }
