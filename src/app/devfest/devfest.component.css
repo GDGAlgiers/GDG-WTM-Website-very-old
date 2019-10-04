@@ -500,9 +500,6 @@ section {
   color: #fff;
   outline: 0 !important
 }
-/deep/ .countdown {
-  
-}
 /deep/ .measurements {
   text-align: center;
   font-family: 'Orbitron', sans-serif;
