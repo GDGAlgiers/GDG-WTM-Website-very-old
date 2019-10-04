@@ -500,23 +500,27 @@ section {
   color: #fff;
   outline: 0 !important
 }
+
 /deep/ .measurements {
   text-align: center;
   font-family: 'Orbitron', sans-serif;
-  border-left: solid 4px #e9e9e9bb;
   margin-left: 8px;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  border-radius: 15px !important;
- }
+
+}
+
 /deep/ .measurements p {
   font-size: 30px;
   font-weight: bolder;
 }
 
 /deep/ .measurements>p.measurements-number {
-  font-size: 36px;
+  font-size: 100px;
+  margin-right: 50px;
   color: #f44336;
+  margin-bottom: 0%;
 }
-/deep/ .measurements>p.measurements-text{
- font-size: 18px;
+
+/deep/ .measurements>p.measurements-text {
+  font-size: 25px;
+  margin-right: 50px;
 }
