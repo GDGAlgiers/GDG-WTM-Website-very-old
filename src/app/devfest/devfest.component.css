@@ -524,3 +524,31 @@ section {
   font-size: 25px;
   margin-right: 50px;
 }
+
+@media only screen and (max-width: 1024px) {
+  /deep/ .measurements>p.measurements-number {
+    font-size: 90px;
+    margin-right: 40px;
+    color: #f44336;
+    margin-bottom: 0%;
+  }
+
+  /deep/ .measurements>p.measurements-text {
+    font-size: 25px;
+    margin-right: 40px;
+  }
+
+}
+
+@media only screen and (max-width: 460px) {
+  /deep/ .measurements>p.measurements-number {
+    font-size: 35px;
+    margin-right: 10px;
+  }
+  
+  /deep/ .measurements>p.measurements-text {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  
+}
