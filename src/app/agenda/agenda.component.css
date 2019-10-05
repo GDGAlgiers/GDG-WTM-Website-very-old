@@ -40,6 +40,7 @@
 ::ng-deep .customClass>ul .nav-link,
 ::ng-deep .subClass>ul .nav-link {
   color: black;
+  height: 100%;
 }
 
 ::ng-deep .subClass>ul li:nth-child(2),
@@ -101,4 +102,21 @@ div.greenItem {
 
 .first{
   margin-left: 0%;
+}
+
+@media only screen and (max-width: 460px) {
+  .shortItem{
+    display: flex;
+    margin-left: 0%;
+  }
+  
+}
+
+@media only screen and (max-width: 1024px) {
+  .shortItem{
+    min-width: 48%;
+    margin-left: 0%;
+    margin-right: 2%;
+  }
+  
 }
