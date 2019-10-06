@@ -264,7 +264,7 @@ section {
   padding: 20px;
   height: 100px;
   width: 250px;
-  object-fit: contain
+  object-fit: contain;
 }
 
 .rounded-square {
