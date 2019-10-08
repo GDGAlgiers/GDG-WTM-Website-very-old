@@ -104,19 +104,22 @@ div.greenItem {
   margin-left: 0%;
 }
 
-@media only screen and (max-width: 460px) {
-  .shortItem{
-    display: flex;
-    margin-left: 0%;
-  }
-  
-}
+
 
 @media only screen and (max-width: 1024px) {
   .shortItem{
     min-width: 48%;
     margin-left: 0%;
     margin-right: 2%;
+  }
+  
+}
+@media only screen and (max-width: 760px) {
+  .shortItem{
+    display: flex;
+    margin-left: 0%;
+    margin-right: 0;
+    min-width: 100%;
   }
   
 }

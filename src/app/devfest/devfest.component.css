@@ -206,7 +206,9 @@ section {
 .little-cards-container>div {
   min-width: 100%;
 }
-
+.workshops-section .card{
+  min-height: 410px;
+}
 .hackathon-section .section-title {
   font-size: 9vw;
   position: relative;
@@ -508,32 +510,29 @@ section {
 }
 
 /deep/ .measurements p {
-  font-size: 30px;
   font-weight: bolder;
 }
 
 /deep/ .measurements>p.measurements-number {
-  font-size: 100px;
+  font-size: 7vw;
   margin-right: 50px;
   color: #f44336;
   margin-bottom: 0%;
 }
 
 /deep/ .measurements>p.measurements-text {
-  font-size: 25px;
+  font-size: 3vw;
   margin-right: 50px;
 }
 
 @media only screen and (max-width: 1024px) {
   /deep/ .measurements>p.measurements-number {
-    font-size: 90px;
     margin-right: 40px;
     color: #f44336;
     margin-bottom: 0%;
   }
 
   /deep/ .measurements>p.measurements-text {
-    font-size: 25px;
     margin-right: 40px;
   }
 

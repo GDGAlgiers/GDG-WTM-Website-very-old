@@ -1,5 +1,5 @@
 <div class="nav-space" style="height: 0;"></div>
-<div style="overflow-x:hidden; padding-top: 30px;">
+<div style="overflow:hidden; padding-top: 30px;">
   <div class="container">
     <!--Intro Section-->
     <section>
@@ -133,7 +133,7 @@
 
 
   <!--Workshps Section-->
-  <section>
+  <section class="workshops-section">
     <p class="section-title">Workshops</p>
     <div class="item-container">
 
@@ -143,8 +143,8 @@
       <img src="/assets/Red effect.svg" class="item-effect"
         style="bottom: -50%; right: -35%; transform:rotateZ(-40deg); height: 100%;width:60%;z-index: 0;">
       <div class="item">
-        <div class=" simpleBar" data-simplebar>
-          <div style="width: 970px;">
+        <div class=" simpleBar little-cards-container" data-simplebar>
+          <div style="width: 970px;min-width: 100%; ">
             <div class="card little  text-dark bg-white">
               <img class="card-img-top" src="assets/gallery/docker.svg" alt="Card image cap">
               <div class="card-body">
@@ -190,7 +190,7 @@
   <!--end Workshops Section-->
 
   <!--Trainers Section-->
-  <section>
+  <section >
     <p class="section-title">Trainers</p>
     <div class="item-container">
       <img src="/assets/Yellow effect.svg" class="item-effect"
@@ -199,8 +199,8 @@
         style="top: -30%; right: -40%; transform:rotateZ(150deg); height: 120%;width:50%; display: none;">
 
       <div class="item">
-        <div class="simpleBar little-cards-container">
-          <div style="width: 970px;">
+        <div class="simpleBar little-cards-container" data-simplebar>
+          <div style="width: 670px; min-width: 100%;">
             <div class="card little  text-dark bg-white">
               <img class="card-img-top" src="assets/gallery/Ayoub Benaissa.JPG" alt="Card image cap">
               <div class="card-body">
@@ -236,8 +236,8 @@
         style="bottom: -20%; right: -40%; transform:rotateZ(140deg); height: 140%;width:80%;">
 
       <div class="item">
-        <div class="simpleBar " data-simplebar>
-
+        <div class="simpleBar little-cards-container">
+          
           <div style="width: 970px;">
             <div class="card little  text-dark bg-white">
               <img class="card-img-top" src="assets/gallery/CI.png" alt="Card image cap">
@@ -288,7 +288,7 @@
   <!--end Conferences Section-->
 
   <!--Speakers Section-->
-  <section>
+  <section *ngIf="false">
     <p class="section-title">Speakers</p>
     <div class="item-container">
 
