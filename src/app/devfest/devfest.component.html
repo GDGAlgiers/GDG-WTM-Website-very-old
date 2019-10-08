@@ -144,7 +144,7 @@
         style="bottom: -50%; right: -35%; transform:rotateZ(-40deg); height: 100%;width:60%;z-index: 0;">
       <div class="item">
         <div class=" simpleBar little-cards-container" data-simplebar>
-          <div style="width: 970px;min-width: 100%; ">
+          <div style="width: max-content;min-width: 100%; ">
             <div class="card little  text-dark bg-white">
               <img class="card-img-top" src="assets/gallery/docker.svg" alt="Card image cap">
               <div class="card-body">
@@ -190,7 +190,7 @@
   <!--end Workshops Section-->
 
   <!--Trainers Section-->
-  <section >
+  <section>
     <p class="section-title">Trainers</p>
     <div class="item-container">
       <img src="/assets/Yellow effect.svg" class="item-effect"
@@ -200,7 +200,7 @@
 
       <div class="item">
         <div class="simpleBar little-cards-container" data-simplebar>
-          <div style="width: 670px; min-width: 100%;">
+          <div style="width: max-content; min-width: 100%;">
             <div class="card little  text-dark bg-white">
               <img class="card-img-top" src="assets/gallery/Ayoub Benaissa.JPG" alt="Card image cap">
               <div class="card-body">
@@ -237,8 +237,8 @@
 
       <div class="item">
         <div class="simpleBar little-cards-container">
-          
-          <div style="width: 970px;">
+
+          <div style="width: max-content;">
             <div class="card little  text-dark bg-white">
               <img class="card-img-top" src="assets/gallery/CI.png" alt="Card image cap">
               <div class="card-body">
@@ -280,6 +280,22 @@
               </div>
             </div>
 
+            <div class="card little  text-dark bg-white">
+              <img class="card-img-top" style="
+              height: 200px;
+              width: 100%;
+              object-fit: contain;" src="assets/gallery/BD.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <p class="title">
+                  Data quality is more important than you think!
+                </p>
+                <p class="descr">This talk will focus on tips & tricks I learned while creating machine learning
+                  datasets for deep
+                  learning.
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -288,7 +304,7 @@
   <!--end Conferences Section-->
 
   <!--Speakers Section-->
-  <section *ngIf="false">
+  <section>
     <p class="section-title">Speakers</p>
     <div class="item-container">
 
@@ -299,7 +315,7 @@
 
       <div class="item">
         <div class="simpleBar little-cards-container">
-          <div style="width: 970px;">
+          <div style="width: max-content;">
             <div class="card little  text-dark bg-white">
               <img class="card-img-top" src="assets/gallery/Islem Maboud.jpg" alt="Card image cap">
               <div class="card-body">
@@ -307,6 +323,16 @@
                   Islem MABOUD
                 </p>
                 <p class="organization">Why React Hooks</p>
+              </div>
+            </div>
+
+            <div class="card little  text-dark bg-white">
+              <img class="card-img-top" src="assets/gallery/Yacine_BENKAIDALI.JPG" alt="Card image cap">
+              <div class="card-body">
+                <p class="title">
+                  Yacine BENKAIDALI
+                </p>
+                <p class="organization">Code Modular on Android</p>
               </div>
             </div>
 
@@ -373,7 +399,7 @@
           style="bottom: -70%; right: -45%; transform:rotateZ(-40deg); height: 110%;width:80%;z-index: 0;">
         <div class="item">
           <div class="simpleBar little-cards-container">
-            <div style="width: 970px;">
+            <div style="width: max-content;">
               <div class="card little  text-dark bg-white">
                 <img class="card-img-top" src="assets/gallery/azzadine.jpeg" alt="Card image cap">
                 <div class="card-body">
@@ -383,6 +409,7 @@
                   <p class="organization">Android Mentor</p>
                 </div>
               </div>
+
               <div class="card little  text-dark bg-white">
                 <img class="card-img-top" src="assets/gallery/djamel.jpeg" alt="Card image cap">
                 <div class="card-body">
@@ -392,6 +419,7 @@
                   <p class="organization">Node Js & React Mentor</p>
                 </div>
               </div>
+
               <div class="card little  text-dark bg-white">
                 <img class="card-img-top" src="assets/gallery/hadjer" alt="Card image cap">
                 <div class="card-body">
@@ -401,6 +429,58 @@
                   <p class="organization">Machine learning Mentor</p>
                 </div>
               </div>
+
+              <div class="card little  text-dark bg-white">
+                <img class="card-img-top" src="assets/gallery/Mentors/Abderraouf.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="title">
+                    Abderraouf GATTAL
+                  </p>
+                  <p class="organization">Android & front-end Mentor</p>
+                </div>
+              </div>
+
+              <div class="card little  text-dark bg-white">
+                <img class="card-img-top" src="assets/gallery/Yacine_BENKAIDALI.JPG" alt="Card image cap">
+                <div class="card-body">
+                  <p class="title">
+                    Yacine BENKAIDALI
+                  </p>
+                  <p class="organization">Android & Angular Mentor</p>
+                </div>
+              </div>
+
+              <div class="card little  text-dark bg-white">
+                <img class="card-img-top" src="assets/gallery/Mentors/Meyssa.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="title">
+                    Meysaa ZOUAMBI
+                  </p>
+                  <p class="organization">ML & Flutter Mentor</p>
+                </div>
+              </div>
+
+              <div class="card little  text-dark bg-white">
+                <img class="card-img-top" src="assets/gallery/Mentors/Batouche.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="title">
+                    Oussama BATOUCHE
+                  </p>
+                  <p class="organization">Backend Mentor</p>
+                </div>
+              </div>
+
+              <div class="card little  text-dark bg-white">
+                <img class="card-img-top" src="assets/gallery/Mentors/Isam.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="title">
+                    Issam KERFAH
+                  </p>
+                  <p class="organization">Android Mentor</p>
+                </div>
+              </div>
+
+
             </div>
           </div>
         </div>
@@ -479,9 +559,9 @@
       <img src="/assets/Red effect.svg" class="item-effect" style="top: -125%; right: -30%; 
             transform:rotateZ(155deg);height: 140%;width:60%;z-index: 0; display: none">
       <div class="item" style="margin-bottom: -8%">
-        <div class="simpleBar little-cards-container"> 
-            <img class="card little" style="padding: 1%;" src="../../assets/GDG_Algiers_Logo_Dark.svg " height="100px">
-            <img class="card little" style="padding: 0.5%;" src="../../assets/WTMAlgiersLogoDark.svg" height="100px">
+        <div class="simpleBar little-cards-container">
+          <img class="card little" style="padding: 1%;" src="../../assets/GDG_Algiers_Logo_Dark.svg " height="100px">
+          <img class="card little" style="padding: 0.5%;" src="../../assets/WTMAlgiersLogoDark.svg" height="100px">
         </div>
       </div>
     </div>
@@ -495,7 +575,7 @@
       <div class="item">
         <div class="simpleBar little-cards-container">
           <div>
-              <img class="card little" style="padding: 1%;" src="../../assets/gallery/Djezzy.png">
+            <img class="card little" style="padding: 1%;" src="../../assets/gallery/Djezzy.png">
           </div>
           <div>
             <img class="card little" style="padding: 1%;" src="../../assets/gallery/GHE.svg" height="100px">

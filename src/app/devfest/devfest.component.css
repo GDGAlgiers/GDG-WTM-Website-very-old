@@ -36,6 +36,11 @@ section {
   padding-bottom: 40px;
 }
 
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
 .section-title {
   text-align: center;
   font-size: 4vw;
