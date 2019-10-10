@@ -1,5 +1,5 @@
 <div class="nav-space" style="height: 0;"></div>
-<div style="overflow-x:hidden; padding-top: 30px;">
+<div style="overflow:hidden; padding-top: 30px;">
   <div class="container">
     <!--Intro Section-->
     <section>
@@ -8,7 +8,7 @@
       </div>
       <div class="item-container">
         <img src="/assets/Yellow effect.svg" class="item-effect"
-          style="top: -60%; left: -27%; transform:rotateZ(0deg);height: 100%;width:40%;">
+          style="top: -45%; left: -27%; transform:rotateZ(-30deg);height: 100%;width:40%;">
         <img src="/assets/Blue effect.svg" class="item-effect"
           style="bottom: -30%; right: -25%; transform:rotateZ(130deg); height: 80%;width:40%;">
         <div class="item">
@@ -23,7 +23,7 @@
                   <p class="card-text ">Last year’s edition of Devfest was a total hit 💯 It gave a chance to more than
                     300 students, professionals, and managers to learn, compete and have fun all at once with new
                     technologies. And this year’s edition is not aiming for any less than that.</p>
-                  <a href="#" class="btn card-btn">Oct 24th 25th 26th 2019</a>
+                  <a class="btn card-btn">Oct 24th 25th 26th 2019</a>
                 </div>
               </div>
             </div>
@@ -133,7 +133,7 @@
 
 
   <!--Workshps Section-->
-  <section>
+  <section class="workshops-section">
     <p class="section-title">Workshops</p>
     <div class="item-container">
 
@@ -143,56 +143,86 @@
       <img src="/assets/Red effect.svg" class="item-effect"
         style="bottom: -50%; right: -35%; transform:rotateZ(-40deg); height: 100%;width:60%;z-index: 0;">
       <div class="item">
-        <div class=" simpleBar" data-simplebar>
-          <div style="width: 1300px;min-width: 100%;">
+        <div class=" simpleBar little-cards-container" data-simplebar>
+          <div style="width: max-content;min-width: 100%; ">
             <div class="card little  text-dark bg-white">
-              <img class="card-img-top" src="assets/gallery/machine-learning-cybersecurity-applications.png"
-                alt="Card image cap">
+              <img class="card-img-top" src="assets/gallery/Workshops/docker.svg" alt="Card image cap">
               <div class="card-body">
                 <p class="title">
-                  ML
+                  Docker 101
                 </p>
                 <p class="descr">
-                  Our "Machine Learning StudyJam" will get you to learn all about this topic and getting your first hand
-                  experience with the coolest python machine learning libraries.
+                  A workshop introducing containers technologies and Docker key concepts, attendees will learn about the
+                  fundamentals and then get their hands dirty working on containerizing different kind of applications.
                 </p>
               </div>
             </div>
             <div class="card little  text-dark bg-white">
-              <img class="card-img-top" src="assets/gallery/htmlCssJS.jpg" alt="Card image cap">
+              <img class="card-img-top" src="assets/gallery/Workshops/OOP.png" alt="Card image cap">
               <div class="card-body">
                 <p class="title">
-                  HTML/CSS & JS
+                  Learn OOP with video games
                 </p>
-                <p class="descr">Subscribe on the workshop "Web development made easy " and get amazed of what these
-                  technologies can help you accomplish
+                <p class="descr">In this workshop you will learn how to create simple video games using UNITY and with
+                  it understand the basic concept of the OOP and why is it so handful when it comes to these kind of
+                  projects.
                 </p>
               </div>
             </div>
             <div class="card little  text-dark bg-white">
               <img class="card-img-top" style="height: 200px;width:100%;object-fit: contain;"
-                src="assets/gallery/android-guides.jpg" alt="Card image cap">
+                src="assets/gallery/Workshops/BD.jpeg" alt="Card image cap">
               <div class="card-body">
                 <p class="title">
-                  Android Jetpack
+                  Big data with scala & spark
                 </p>
-                <p class="descr">Join us in this workshop about the latest releases of the jetpack libraries and learn
-                  how
-                  to write clean code and avoid biolerplate code 😍
+                <p class="descr">During the workshop, you will be introduced to big data problems, and how to
+                  solve them using apache spark and scala based on real-world data, collected from
+                  ouedkniss.com and twitter.
                 </p>
               </div>
             </div>
+
             <div class="card little  text-dark bg-white">
-              <img class="card-img-top" src="assets/gallery/uiux.png" alt="Card image cap">
+              <img class="card-img-top" style="height: 200px;width:100%;object-fit: contain;"
+                src="assets/gallery/Workshops/ml.jpg" alt="Card image cap">
               <div class="card-body">
                 <p class="title">
-                  UI/UX
+                  ML Study Jam
                 </p>
-                <p class="descr">Design and prototype are one of the secrets for a successful app!
-                  Want to Prototype a website or a mobile app? Come join us on "From an idea to a prototype" workshop .
+                <p class="descr">Our "Machine Learning StudyJam" will get you to learn all about this topic and getting
+                  your first hand experience with the coolest python machine learning libraries.
                 </p>
               </div>
             </div>
+
+            <div class="card little  text-dark bg-white">
+              <img class="card-img-top" style="height: 200px;width:100%;object-fit: contain;"
+                src="assets/gallery/Workshops/flutter.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="title">
+                  Flutter Essentials
+                </p>
+                <p class="descr">
+                  We’ll start our journey playing with layout composing, styling and animations,
+                  Next, we’ll go deeper with a close look at what Flutter offers for data management and network.
+                </p>
+              </div>
+            </div>
+
+            <div class="card little  text-dark bg-white">
+              <img class="card-img-top" style="height: 200px;width:100%;object-fit: contain;"
+                src="assets/gallery/Workshops/amp.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="title">
+                  AMP
+                </p>
+                <p class="descr">Our "Machine Learning StudyJam" will get you to learn all about this topic and getting
+                  your first hand experience with the coolest python machine learning libraries.
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -210,37 +240,71 @@
         style="top: -30%; right: -40%; transform:rotateZ(150deg); height: 120%;width:50%; display: none;">
 
       <div class="item">
-        <div class="simpleBar little-cards-container">
-          <!--div>
+        <div class="simpleBar little-cards-container" data-simplebar>
+          <div style="width: max-content; min-width: 100%;">
             <div class="card little  text-dark bg-white">
-              <img class="card-img-top" src="assets/gallery/azzadine.jpeg" alt="Card image cap">
+              <img class="card-img-top" src="assets/gallery/Trainers/Ayoub Benaissa.JPG" alt="Card image cap">
               <div class="card-body">
                 <p class="title">
-                  Azzeddine CHENINE
+                  Ayoub BENAISSA
                 </p>
-                <p class="organization">Android Mentor</p>
+                <p class="organization">ESI SBA Student, DevOps Engineer at Realistic Security & Docker Community Leader
+                  in Algeria.</p>
               </div>
             </div>
             <div class="card little  text-dark bg-white">
-              <img class="card-img-top" src="assets/gallery/djamel.jpeg" alt="Card image cap">
+              <img class="card-img-top" src="assets/gallery/Trainers/Anis Rouane.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="title">
+                  Anis ROUANE
+                </p>
+                <p class="organization">Passionate Games Developer, "ZeGaming dev camp 3" & "AGC19" Awards winner with
+                  GNINART team.</p>
+              </div>
+            </div>
+
+            <div class="card little  text-dark bg-white">
+              <img class="card-img-top" src="assets/gallery/Trainers/mohammedi_haroune.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="title">
+                  Haroun MOHAMMEDI
+                </p>
+                <p class="organization">Sotware Engineer at Big Mama Tech & Founder of Madrassaty.</p>
+              </div>
+            </div>
+
+            <div class="card little  text-dark bg-white">
+              <img class="card-img-top" src="assets/gallery/Mentors/Amine.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <p class="title">
+                  Amine ATHMANI
+                </p>
+                <p class="organization">GDG Algiers Ex-Manager & a SUSI EED Alumni.</p>
+              </div>
+            </div>
+
+            <div class="card little  text-dark bg-white">
+              <img class="card-img-top" src="assets/gallery/Mentors/djamel.jpeg" alt="Card image cap">
               <div class="card-body">
                 <p class="title">
                   Djamaleddine BELILET
                 </p>
-                <p class="organization">Node Js & React Mentor</p>
-              </div>
-            </div>
-            <div class="card little  text-dark bg-white">
-              <img class="card-img-top" src="assets/gallery/hadjer" alt="Card image cap">
-              <div class="card-body">
-                <p class="title">
-                  Hadjer BENMEZIANE
-                </p>
-                <p class="organization">Machine learning Mentor</p>
+                <p class="organization">Web consultant & a trainer at formini, Mobile/web developer at methode
+                  consulting</p>
               </div>
             </div>
 
-          </div-->
+            <div class="card little  text-dark bg-white">
+              <img class="card-img-top" src="assets/gallery/Trainers/batoul.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <p class="title">
+                  Elbatoul MAZIGHI 
+                </p>
+                <p class="organization">GDG Algiers Co-Organizer & an ESI Student.</p>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
@@ -256,62 +320,81 @@
         style="bottom: -20%; right: -40%; transform:rotateZ(140deg); height: 140%;width:80%;">
 
       <div class="item">
-        <div class="simpleBar " data-simplebar>
+        <div class="simpleBar little-cards-container">
 
-          <div style="width: 1300px;min-width: 100%;">
+          <div style="width: max-content;">
             <div class="card little  text-dark bg-white">
-              <img class="card-img-top" src="assets/gallery/machine-learning-cybersecurity-applications.png"
-                alt="Card image cap">
+              <img class="card-img-top" src="assets/gallery/Confs/CI.png" alt="Card image cap">
               <div class="card-body">
                 <p class="title">
-                  Machine learning
+                  From Code To Production With CI/CD Pipelines
                 </p>
-                <p class="descr">We live in a ML-full World 😍
-                  Have you ever wondered whether it was possible to deploy your ML model on mobile devices ?!
-                  And if it were possible, will you deploy it locally or on the cloud ?🤔</p>
+                <p class="descr">In this conference we will take a look on how to Plan, Code, Build, Test, Release,
+                  Deploy, Operate, and Monitor your app in production.</p>
               </div>
             </div>
             <div class="card little  text-dark bg-white">
-              <img class="card-img-top" src="assets/gallery/google-flutter-logo-white.png" style="
+              <img class="card-img-top" src="assets/gallery/Confs/AC.png" style="
               height: 200px;
               width: 100%;
               object-fit: contain;" alt="Card image cap">
               <div class="card-body">
                 <p class="title">
-                  Flutter
+                  Code Modular on Android
                 </p>
-                <p class="descr">Cross platform apps with a native performance 🚀 for all your mobile devices 😎
-                  "Flutter", Google's way to build beautiful hybrid mobile apps 🤩 in a record time ! following best
-                  practices </p>
+                <p class="descr">During the confrence we will cover what's new in architecture components,
+                  how to write a modular code using them and we will cover navigation, livedata, viewModel,
+                  databinding, retrofit, room & workmanager.
+                </p>
               </div>
             </div>
             <div class="card little  text-dark bg-white">
               <img class="card-img-top" style="
               height: 200px;
               width: 100%;
-              object-fit: contain;" src="assets/gallery/q-logo.png" alt="Card image cap">
+              object-fit: contain;" src="assets/gallery/Confs/hooks.png" alt="Card image cap">
               <div class="card-body">
                 <p class="title">
-                  Android Q
+                  Why React Hooks
                 </p>
-                <p class="descr">Android continues to move forward! 🏃‍♂️
-                  Want to see how your phone got smarter ?
-                  Join us to learn about the latest version 😍"Android Q" 🎂 to discover how you can
-                  enjoy your new mobile experience 😉
+                <p class="descr">Hooks are the new hot API changes about React everyone is talking about. In this talk,
+                  we will cover React hooks, why there are important for any React developer and a quick look at the
+                  new API.
                 </p>
               </div>
             </div>
+
             <div class="card little  text-dark bg-white">
-              <img class="card-img-top" src="assets/gallery/android-guides.jpg" alt="Card image cap">
+              <img class="card-img-top" style="
+              height: 200px;
+              width: 100%;
+              object-fit: contain;" src="assets/gallery/Workshops/BD.jpeg" alt="Card image cap">
               <div class="card-body">
                 <p class="title">
-                  Android Jetpack
+                  Data quality is more important than you think!
                 </p>
-                <p class="descr">Jetpack is a suite of libraries, tools, and guidance to help developers write
-                  high-quality apps easier. These components help you follow best practices, free you from writing
-                  boilerplate code.😃</p>
+                <p class="descr">This talk will focus on tips & tricks I learned while creating machine learning
+                  datasets for deep
+                  learning.
+                </p>
               </div>
             </div>
+
+            <div class="card little  text-dark bg-white">
+              <img class="card-img-top" style="
+              height: 200px;
+              width: 100%;
+              object-fit: contain;" src="assets/gallery/Confs/tfx.svg" alt="Card image cap">
+              <div class="card-body">
+                <p class="title">
+                  ML Pipeline : From Research to Production
+                </p>
+                <p class="descr">Follow the story of that awesome researcher who created a new model but stuggles to
+                  scale it, fortunately TFX is here to help !
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -331,36 +414,62 @@
 
       <div class="item">
         <div class="simpleBar little-cards-container">
-          <!--div>
+          <div style="width: max-content;">
+
             <div class="card little  text-dark bg-white">
-              <img class="card-img-top" src="assets/gallery/azzadine.jpeg" alt="Card image cap">
+              <img class="card-img-top" src="assets/gallery/Speakers/Ilyes Houdjedje.jpg" alt="Card image cap">
               <div class="card-body">
                 <p class="title">
-                  Azzeddine CHENINE
+                  Ilyes HOUDJEDJE
                 </p>
-                <p class="organization">Android Mentor</p>
+                <p class="organization">CTO at ADSIL, GDG Ghradaia & CS Oasis member, Tech & Entrepreneurship
+                  enthusiast.</p>
               </div>
             </div>
+
             <div class="card little  text-dark bg-white">
-              <img class="card-img-top" src="assets/gallery/djamel.jpeg" alt="Card image cap">
+              <img class="card-img-top" src="assets/gallery/Speakers/Yacine_BENKAIDALI.JPG" alt="Card image cap">
               <div class="card-body">
                 <p class="title">
-                  Djamaleddine BELILET
+                  Yacine BENKAIDALI
                 </p>
-                <p class="organization">Node Js & React Mentor</p>
+                <p class="organization">GDG Algiers Development Department Manager & an Android Developer.</p>
               </div>
             </div>
+
             <div class="card little  text-dark bg-white">
-              <img class="card-img-top" src="assets/gallery/hadjer" alt="Card image cap">
+              <img class="card-img-top" src="assets/gallery/Speakers/Islem Maboud.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="title">
+                  Islem MABOUD
+                </p>
+                <p class="organization">Full stack developer and a content creator.</p>
+              </div>
+            </div>
+
+            <div class="card little  text-dark bg-white">
+              <img class="card-img-top" src="assets/gallery/Speakers/Amine Bendahmane.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="title">
+                  Amine BENDAHMANE
+                </p>
+                <p class="organization">Ph.D candidate in AI & Robotics, Part-time teacher & a freelance developer.</p>
+              </div>
+            </div>
+
+            <div class="card little  text-dark bg-white">
+              <img class="card-img-top" src="assets/gallery/Mentors/hadjer.jpeg" alt="Card image cap">
               <div class="card-body">
                 <p class="title">
                   Hadjer BENMEZIANE
                 </p>
-                <p class="organization">Machine learning Mentor</p>
+                <p class="organization">GDG Algiers Co-Organizer, Head Dean of School of AI North Africa & a WTM
+                  Ambassador.</p>
               </div>
             </div>
 
-          </div-->
+
+          </div>
         </div>
       </div>
     </div>
@@ -403,7 +512,8 @@
       <p class="section-title" style="z-index: 1; margin-top: 2%; ">Registrations are open</p>
       <div style="margin-top: 15px; text-align: center; padding-bottom: 3%;" class="rounded-square">
         <p style="cursor: pointer; background-color: #4285F4;"
-          (click)="goToLink('https://docs.google.com/forms/d/e/1FAIpQLScpw1GJ8q7hGfjmkRE7ZmduK9BHAS8MEJtzDa0cqjnuEk53dQ/viewform')">Register now</p>
+          (click)="goToLink('https://docs.google.com/forms/d/e/1FAIpQLScpw1GJ8q7hGfjmkRE7ZmduK9BHAS8MEJtzDa0cqjnuEk53dQ/viewform')">
+          Register now</p>
 
       </div>
     </div>
@@ -421,34 +531,142 @@
           style="bottom: -70%; right: -45%; transform:rotateZ(-40deg); height: 110%;width:80%;z-index: 0;">
         <div class="item">
           <div class="simpleBar little-cards-container">
-            <div style="width: 970px;">
+            <div style="width: max-content;">
               <div class="card little  text-dark bg-white">
-                <img class="card-img-top" src="assets/gallery/azzadine.jpeg" alt="Card image cap">
+                <img class="card-img-top" src="assets/gallery/Mentors/azzadine.jpeg" alt="Card image cap">
                 <div class="card-body">
                   <p class="title">
                     Azzeddine CHENINE
                   </p>
-                  <p class="organization">Android Mentor</p>
+                  <p class="organization">GDG Algiers CO-Organizer & a Android/Web Developer.</p>
                 </div>
               </div>
+
               <div class="card little  text-dark bg-white">
-                <img class="card-img-top" src="assets/gallery/djamel.jpeg" alt="Card image cap">
+                <img class="card-img-top" src="assets/gallery/Mentors/djamel.jpeg" alt="Card image cap">
                 <div class="card-body">
                   <p class="title">
                     Djamaleddine BELILET
                   </p>
-                  <p class="organization">Node Js & React Mentor</p>
+                  <p class="organization">Web consultant & a trainer at formini, Mobile/web developer at methode
+                    consulting</p>
                 </div>
               </div>
+
               <div class="card little  text-dark bg-white">
-                <img class="card-img-top" src="assets/gallery/hadjer" alt="Card image cap">
+                <img class="card-img-top" src="assets/gallery/Mentors/hadjer.jpeg" alt="Card image cap">
                 <div class="card-body">
                   <p class="title">
                     Hadjer BENMEZIANE
                   </p>
-                  <p class="organization">Machine learning Mentor</p>
+                  <p class="organization">GDG Algiers Co-Organizer, Head Dean of School of AI North Africa & a WTM
+                    Ambassador.</p>
                 </div>
               </div>
+
+              <div class="card little  text-dark bg-white">
+                <img class="card-img-top" src="assets/gallery/Mentors/Abderraouf.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="title">
+                    Abderraouf GATTAL
+                  </p>
+                  <p class="organization"> GDG Algiers Co-Organizer, GitHub Campus Expert & an Android/Front-end
+                    Developer + UI Designer.</p>
+                </div>
+              </div>
+
+              <div class="card little  text-dark bg-white">
+                <img class="card-img-top" src="assets/gallery/Speakers/Yacine_BENKAIDALI.JPG" alt="Card image cap">
+                <div class="card-body">
+                  <p class="title">
+                    Yacine BENKAIDALI
+                  </p>
+                  <p class="organization">GDG Algiers Development Department Manager & an Android Developer.</p>
+                </div>
+              </div>
+
+              <div class="card little  text-dark bg-white">
+                <img class="card-img-top" src="assets/gallery/Mentors/Meyssa.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="title">
+                    Meysaa ZOUAMBI
+                  </p>
+                  <p class="organization">GDG Algiers Co-Organizer, WTM Ambassador & a Machine learning enthusiast.</p>
+                </div>
+              </div>
+
+              <div class="card little  text-dark bg-white">
+                <img class="card-img-top" src="assets/gallery/Mentors/Batouche.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="title">
+                    Oussama BATOUCHE
+                  </p>
+                  <p class="organization">GDG Algiers Member & Backend Engineer at LEAM Technology System.</p>
+                </div>
+              </div>
+
+              <div class="card little  text-dark bg-white">
+                <img class="card-img-top" src="assets/gallery/Mentors/Isam.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="title">
+                    Issam KERFAH
+                  </p>
+                  <p class="organization">GDG Algiers Member & Mobile Developer.</p>
+                </div>
+              </div>
+
+              <div class="card little  text-dark bg-white">
+                <img class="card-img-top" src="assets/gallery/Mentors/Adel.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="title">
+                    Adel FOUDAD
+                  </p>
+                  <p class="organization">IOS developer at YA Technologies.</p>
+                </div>
+              </div>
+
+              <div class="card little  text-dark bg-white">
+                <img class="card-img-top" src="assets/gallery/Mentors/mahi.JPG" alt="Card image cap">
+                <div class="card-body">
+                  <p class="title">
+                    Islam MAHI
+                  </p>
+                  <p class="organization">Former student at ESI and currently working as a UX Designer at YASSIR.</p>
+                </div>
+              </div>
+
+              <div class="card little  text-dark bg-white">
+                <img class="card-img-top" src="assets/gallery/Mentors/Anis meheni.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="title">
+                    Anis MHENNI
+                  </p>
+                  <p class="organization">Passionate UX Designer, MEPI Alumni and an ESI Student.</p>
+                </div>
+              </div>
+
+              <div class="card little  text-dark bg-white">
+                <img class="card-img-top" src="assets/gallery/Mentors/Amine.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="title">
+                    Amine ATHMANI
+                  </p>
+                  <p class="organization">GDG Algiers Ex-Manager & a SUSI EED Alumni.</p>
+                </div>
+              </div>
+
+              <div class="card little  text-dark bg-white">
+                <img class="card-img-top" src="assets/gallery/Mentors/Houcine.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="title">
+                    Houcine KHENNOUCHE
+                  </p>
+                  <p class="organization">GDG Algiers Development Department Manager & a Full-stack Developer at
+                    VAVADEV.</p>
+                </div>
+              </div>
+
+
             </div>
           </div>
         </div>
@@ -457,6 +675,7 @@
     <!--end Mentors Section-->
 
   </div>
+
   <div class="black">
     <div class="container">
       <!--Winners Section-->
@@ -528,25 +747,34 @@
             transform:rotateZ(155deg);height: 140%;width:60%;z-index: 0; display: none">
       <div class="item" style="margin-bottom: -8%">
         <div class="simpleBar little-cards-container">
-          <div style="width: 670px;">
-            <img class="card little" style="padding: 1%;" src="../../assets/GDG_Algiers_Logo_Dark.svg " height="100px">
-            <img class="card little" style="padding: 0.5%;" src="../../assets/WTMAlgiersLogoDark.svg" height="100px">
-          </div>
+          <img class="card little" style="padding: 1%;" src="../../assets/GDG_Algiers_Logo_Dark.svg " height="100px">
+          <img class="card little" style="padding: 0.5%;" src="../../assets/WTMAlgiersLogoDark.svg" height="100px">
         </div>
       </div>
     </div>
 
     <p class="section-title without-underline" style="z-index: 1">Sponsored us</p>
     <div class="item-container">
-      <img src="/assets/Yellow effect.svg" class="item-effect" style="top: -60%; left: -30%; 
-          transform:rotateZ(170deg);height: 120%;width:50%; display: none;">
-      <img src="/assets/Red effect.svg" class="item-effect" style="top: -125%; right: -30%; 
-          transform:rotateZ(155deg);height: 140%;width:60%;z-index: 0; display: none">
+      <img src="/assets/Yellow effect.svg" class="item-effect" style="top: -100%; left: -30%; 
+          transform:rotateZ(170deg);height: 120%;width:50%;">
+      <img src="/assets/Blue effect.svg" class="item-effect" style="top: -10%; right: -45%; 
+          transform:rotateZ(140deg);height: 140%;width:60%;z-index: 0;">
       <div class="item">
         <div class="simpleBar little-cards-container">
-          <div style="width: 670px;">
-            <img class="sponsor-logo card little" src="../../assets/condor.png">
-            <img class="sponsor-logo card little" src="../../assets/cdta.png" width="300px" height="105px">
+          <div>
+            <img class="card little" style="padding: 1%;" src="../../assets/gallery/Sponsors/Djezzy.png">
+          </div>
+          <div>
+            <img class="card little" style="padding: 1%;" src="../../assets/gallery/Sponsors/GHE.svg" height="100px">
+            <img class="card little" style="padding-right: 1%; padding-left: 1%; padding-bottom: 1%; padding-top: 1%;"
+              src="../../assets/gallery/Sponsors/google.png" height="100px">
+          </div>
+          <div>
+            <img class="card little" style="padding: 1%; padding-bottom: 2%; padding-top: 2%;"
+              src="../../assets/gallery/Sponsors/DZH.png" height="100px">
+            <img class="card little" style="padding: 1%;" src="../../assets/gallery/Sponsors/yassir.png" height="100px">
+            <img class="card little" style="padding: 0%;" src="../../assets/gallery/Sponsors/formini.png"
+              height="100px">
           </div>
         </div>
         <div class="rounded-square">
@@ -563,10 +791,10 @@
     <p class="section-title">Code of Conduct</p>
     <div class="item-container container">
 
-      <img src="/assets/Yellow effect.svg" class="item-effect" style="top: -60%; left: -30%; 
+      <img src="/assets/Green effect.svg" class="item-effect" style="top: -60%; left: -30%; 
           transform:rotateZ(170deg);height: 120%;width:50%;">
-      <img src="/assets/Blue effect.svg" class="item-effect" style="top: 60%; right: -25%; 
-          transform:rotateZ(-45deg);height: 100%;width:40%;z-index: 0;">
+      <img src="/assets/Red effect.svg" class="item-effect" style="top: 40%; right: -25%; 
+          transform:rotateZ(-45deg);height: 120%;width:40%;z-index: 0;">
 
       <div class="item">
         <div class="card full-text   bg-white">
