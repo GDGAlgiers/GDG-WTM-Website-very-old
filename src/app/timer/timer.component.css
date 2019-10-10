@@ -1,29 +1,49 @@
 .container {
-    color: #333;
-    text-align: center;
-  }
-  
-  h1 {
-    font-weight: normal;
-  }
-  
-  li {
-    display: inline-block;
-    font-size: 1.5em;
-    list-style-type: none;
-    padding: 1em;
-    text-transform: uppercase;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    border-radius: 5px !important;
-    margin-left: 2%;
-  }
-  
-  li span {
-    display: block;
-    font-size: 4.5rem;
-    /* color: black; */
-    color: #f24236;
+  color: #333;
+  text-align: center;
+  margin: 0%;
+}
 
+ul {
+  padding: 0%;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+li {
+  width: 25%;
+  display: inline-block;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 6rem;
+  /* color: black; */
+  color: #f24236;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  li {
+    font-size: 1rem;
   }
-  
-  
+
+  li span {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  li {
+    font-size: 0.65rem;
+  }
+
+  li span {
+    font-size: 2rem;
+  }
+}
