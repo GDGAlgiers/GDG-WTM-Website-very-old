@@ -33,6 +33,7 @@ import {CountDown} from 'ng2-date-countdown';
 import { AgendaComponent } from './agenda/agenda.component';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { TabsModule } from 'ngx-bootstrap/tabs';
+import { TimerComponent } from './timer/timer.component';
 
 
 const config = {
@@ -64,6 +65,7 @@ const config = {
     COCPageComponent,
     CountDown,
     AgendaComponent,
+    TimerComponent,
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase), // firestore

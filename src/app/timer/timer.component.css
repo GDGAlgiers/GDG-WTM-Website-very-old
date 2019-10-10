@@ -1,0 +1,29 @@
+.container {
+    color: #333;
+    text-align: center;
+  }
+  
+  h1 {
+    font-weight: normal;
+  }
+  
+  li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 5px !important;
+    margin-left: 2%;
+  }
+  
+  li span {
+    display: block;
+    font-size: 4.5rem;
+    /* color: black; */
+    color: #f24236;
+
+  }
+  
+  
