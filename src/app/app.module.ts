@@ -29,7 +29,6 @@ import { FormsModule } from '@angular/forms';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
-import {CountDown} from 'ng2-date-countdown';
 import { AgendaComponent } from './agenda/agenda.component';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { TabsModule } from 'ngx-bootstrap/tabs';
@@ -63,7 +62,6 @@ const config = {
     DevfestComponent,
     GalleryComponent,
     COCPageComponent,
-    CountDown,
     AgendaComponent,
     TimerComponent,
   ],

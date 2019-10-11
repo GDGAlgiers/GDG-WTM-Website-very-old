@@ -212,7 +212,7 @@ section {
 .little-cards-container>div {
   min-width: 100%;
 }
-.workshops-section .card{
+.workshops-section .card, .trainers-section .card{
   min-height: 410px;
 }
 .hackathon-section .section-title {
