@@ -29,10 +29,10 @@ import { FormsModule } from '@angular/forms';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
-import {CountDown} from 'ng2-date-countdown';
 import { AgendaComponent } from './agenda/agenda.component';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { TabsModule } from 'ngx-bootstrap/tabs';
+import { TimerComponent } from './timer/timer.component';
 
 
 const config = {
@@ -62,8 +62,8 @@ const config = {
     DevfestComponent,
     GalleryComponent,
     COCPageComponent,
-    CountDown,
     AgendaComponent,
+    TimerComponent,
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase), // firestore
