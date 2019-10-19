@@ -82,18 +82,21 @@
       </div>
     </section>
     <!-- end of agenda section  -->
-    <!--Gallery Section-->
+    <!--Apply to Conf Section-->
     <section>
-      <p class="section-title">Gallery</p>
+      <p class="section-title" style="z-index: 1; margin-top: 2%; ">Registrations are open</p>
       <div class="item-container">
-        <img src="/assets/Green effect.svg" class="item-effect"
-          style="top: -60%; left: -50%; transform:rotateZ(-180deg); height: 120%;width:90%;">
-        <div class="item">
-          <app-gallery></app-gallery>
+
+        <div style="margin-top: 15px; text-align: center; padding-bottom: 3%;" class="rounded-square">
+          <p style="cursor: pointer; background-color: #4285F4;"
+            (click)="goToLink('https://docs.google.com/forms/d/e/1FAIpQLSfWAMWTGsXaBp4zBzGhO5oEXdUn91AOzZaIdSlczzJaxcSK6Q/viewform?usp=sf_link')">
+            Register now</p>
+
         </div>
+
       </div>
     </section>
-    <!--end Gallery Section-->
+    <!--Apply to Conf Section-->
     <!--Location Section-->
     <section>
       <p class="section-title">Location</p>
@@ -536,10 +539,9 @@
     </div>
     <!--Apply to Hackathon Section-->
     <div class="container">
-      <p class="section-title" style="z-index: 1; margin-top: 2%; ">Registrations are open</p>
+      <p class="section-title" style="z-index: 1; margin-top: 2%; ">Registrations are closed</p>
       <div style="margin-top: 15px; text-align: center; padding-bottom: 3%;" class="rounded-square">
-        <p style="cursor: pointer; background-color: #4285F4;"
-          (click)="goToLink('https://docs.google.com/forms/d/e/1FAIpQLScpw1GJ8q7hGfjmkRE7ZmduK9BHAS8MEJtzDa0cqjnuEk53dQ/viewform')">
+        <p style="cursor: not-allowed; background-color: #4285F4; opacity: 0.5;">
           Register now</p>
 
       </div>
@@ -757,7 +759,7 @@
         </div>
         <p class="section-title without-underline" style="z-index: 1; margin-top: 2%;">You've just missed it</p>
         <div style="margin-top: 15px; margin-bottom:70px;" class="rounded-square">
-          <p style="cursor: not-allowed; background-color: #4285F4; opacity: 0.7;">Apply now</p>
+          <p style="cursor: not-allowed; background-color: #4285F4; opacity: 0.5;">Apply now</p>
           <!--(click)="goToLink('https://sessionize.com/devfest-20191661/')"-->
         </div>
       </div>
